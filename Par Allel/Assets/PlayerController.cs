@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -16,6 +14,8 @@ public class PlayerController : MonoBehaviour
     {
         otherRb = other.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
+        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(other);
     }
 
     // Update is called once per frame
@@ -41,12 +41,12 @@ public class PlayerController : MonoBehaviour
         {
             if (rb.velocity.y < 0 || otherRb.velocity.y < 0)
             {
-                rb.velocity = rb.velocity * new Vector2(1, 0);
-                otherRb.velocity = rb.velocity * new Vector2(1, 0);
+                rb.velocity *= new Vector2(1, 0);
+                otherRb.velocity *= new Vector2(1, 0);
                 rb.gravityScale = 0;
                 otherRb.gravityScale = 0;
             }
-            if(Physics2D.OverlapBox((Vector2)groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(1f, .015f), 0, groundLayer) && transform.position.y != other.transform.position.y)
+            if (Physics2D.OverlapBox((Vector2)groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(1f, .015f), 0, groundLayer) && transform.position.y != other.transform.position.y)
             {
                 other.transform.position = transform.position * new Vector2(-1, 1);
             }
@@ -61,16 +61,11 @@ public class PlayerController : MonoBehaviour
             otherRb.gravityScale = 1;
         }
 
-        if (isCapped)
-        {
-            StartCoroutine("StopJump");
-        }
-
+        if (isCapped) StartCoroutine(StopJump());
     }
 
     private void Update()
     {
-
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, 10f);
@@ -82,8 +77,8 @@ public class PlayerController : MonoBehaviour
     {
         if (rb.velocity.y > 0 || otherRb.velocity.y > 0)
         {
-            rb.velocity = rb.velocity * new Vector2(1, 0);
-            otherRb.velocity = rb.velocity * new Vector2(1, 0);
+            rb.velocity *= new Vector2(1, 0);
+            otherRb.velocity *= new Vector2(1, 0);
         }
         yield return new WaitForSeconds(.02f);
     }
