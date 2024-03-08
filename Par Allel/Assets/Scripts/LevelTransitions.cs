@@ -10,12 +10,14 @@ public class LevelTransitions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(gameObject);   
+        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(GameObject.Find("Virtual Camera")); // unsure if i need to do this for the live camera but I will
     }
 
     public void NextLevel()
     {
         levelCounter++;
+        if (levelCounter == spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
         a.transform.position = spawnLocations[levelCounter];
         b.transform.position = spawnLocations[levelCounter] * new Vector2(-1, 1);
