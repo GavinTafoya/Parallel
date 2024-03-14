@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform[] groundChecks, wallChecks, roofChecks;
     [SerializeField] LayerMask groundLayer, wallLayer;
     [SerializeField] bool isGrounded, isCapped, isLeftWalled, isRightWalled;
+    private float xDir = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        float xDir = Input.GetAxis("Horizontal");
 
         isGrounded = Physics2D.OverlapBox((Vector2) groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer)
             || Physics2D.OverlapBox((Vector2) groundChecks[1].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer);
@@ -71,6 +71,10 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 10f);
             otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
         }
+        /*if (Input.GetButtonUp("Jump"))
+        {
+            StartCoroutine(StopJump());
+        }*/
     }
 
     private IEnumerator StopJump()
@@ -81,5 +85,24 @@ public class PlayerController : MonoBehaviour
             otherRb.velocity *= new Vector2(1, 0);
         }
         yield return new WaitForSeconds(.02f);
+    }
+
+    public void Left()
+    {
+        xDir = 1;
+    }
+
+    public void Right()
+    {
+        xDir = -1;
+    }
+
+    public void Jump()
+    {
+        if (isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 10f);
+            otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
+        }
     }
 }

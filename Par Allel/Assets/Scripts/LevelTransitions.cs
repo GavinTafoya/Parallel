@@ -5,7 +5,7 @@ public class LevelTransitions : MonoBehaviour
 {
     [SerializeField] private GameObject a, b;
     [SerializeField] private Vector2[] spawnLocations;
-    private int levelCounter = 0;
+    private int levelCounter = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -17,9 +17,15 @@ public class LevelTransitions : MonoBehaviour
     public void NextLevel()
     {
         levelCounter++;
-        if (levelCounter == spawnLocations.Length) levelCounter = 0;
+        if ((levelCounter - 1) == spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
-        a.transform.position = spawnLocations[levelCounter];
-        b.transform.position = spawnLocations[levelCounter] * new Vector2(-1, 1);
+        a.transform.position = spawnLocations[levelCounter - 1];
+        b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
+        PlayerPrefs.SetInt("levelCount", levelCounter);
+    }
+
+    public void SetLevel(int level)
+    {
+        levelCounter = level;
     }
 }
