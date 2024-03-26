@@ -1,3 +1,4 @@
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class TitleScreen : MonoBehaviour
         }
     }
 
+    // I hate this but the wall we track for the cinemachine camera doesnt exist until after the scene is done loading
     public void StartGame()
     {
         int levelCounter = 1;

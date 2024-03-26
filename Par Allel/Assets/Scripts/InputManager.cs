@@ -20,6 +20,14 @@ public class InputManager : MonoBehaviour
     public bool isJumping = false;
     public bool isClicking = false;
 
+    private Rect leftButtonArea;
+    private Rect rightButtonArea;
+    private Rect jumpButtonArea;
+
+    private bool MovingLeft = false;
+    private bool MovingRight = false;
+    private bool Jumping = false;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);

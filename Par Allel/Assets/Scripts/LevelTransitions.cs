@@ -1,3 +1,4 @@
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class LevelTransitions : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(GameObject.Find("Virtual Camera")); // unsure if i need to do this for the live camera but I will
+        SceneManager.activeSceneChanged += FindCameraTarget;
     }
 
     public void NextLevel()
@@ -27,5 +29,10 @@ public class LevelTransitions : MonoBehaviour
     public void SetLevel(int level)
     {
         levelCounter = level;
+    }
+
+    public void FindCameraTarget(Scene old, Scene news)
+    {
+        GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>().Follow = GameObject.Find("MiddleWall").transform;
     }
 }

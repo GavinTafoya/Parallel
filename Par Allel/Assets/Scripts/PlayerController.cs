@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform[] groundChecks, wallChecks, roofChecks;
     [SerializeField] LayerMask groundLayer, wallLayer;
     [SerializeField] bool isGrounded, isCapped, isLeftWalled, isRightWalled;
+    private InputManager inputManager;
     private float xDir = 0;
     private InputManager inputManager;
 
@@ -87,24 +88,5 @@ public class PlayerController : MonoBehaviour
             otherRb.velocity *= new Vector2(1, 0);
         }
         yield return new WaitForSeconds(.02f);
-    }
-
-    public void Left()
-    {
-        xDir = 1;
-    }
-
-    public void Right()
-    {
-        xDir = -1;
-    }
-
-    public void Jump()
-    {
-        if (isGrounded)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
-            otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
-        }
     }
 }
