@@ -15,7 +15,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] private InputActionReference jump;        // The reference to the Jump action
     [SerializeField] private InputActionReference move;        // The reference to the Move action
 
-    public Vector2 movementInput;
+    public float movementInput;
     public bool isInteracting = false;
     public bool isJumping = false;
 
@@ -38,12 +38,12 @@ public class InputManager : MonoBehaviour
     #region Input Handelers
     private void MoveHandler(InputAction.CallbackContext ctx)
     {
-        movementInput = ctx.ReadValue<Vector2>();
+        movementInput = ctx.ReadValue<float>();
     }
 
     private void MoveCanceledHandler(InputAction.CallbackContext ctx)
     {
-        movementInput = Vector2.zero;
+        movementInput = 0;
     }
 
     private void InteractHandler(InputAction.CallbackContext ctx)
