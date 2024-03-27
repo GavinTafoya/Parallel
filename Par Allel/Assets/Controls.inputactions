@@ -11,7 +11,7 @@
                     "id": "ff933fe4-87e0-408b-ac4e-51fb396bd885",
                     "expectedControlType": "",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Tap",
                     "initialStateCheck": false
                 },
                 {
@@ -29,7 +29,7 @@
                     "id": "2a18e61f-e4b6-4a39-8593-0842eac850dc",
                     "expectedControlType": "Vector2",
                     "processors": "",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "initialStateCheck": false
                 }
             ],
