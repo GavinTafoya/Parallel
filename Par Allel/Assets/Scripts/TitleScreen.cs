@@ -3,6 +3,21 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
+    private InputManager inputManager;
+
+    private void Start()
+    {
+        inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
+    }
+
+    private void FixedUpdate()
+    {
+        if (inputManager.isInteracting || Input.GetKey(KeyCode.E))
+        {
+            StartGame();
+        }
+    }
+
     public void StartGame()
     {
         int levelCounter = 1;

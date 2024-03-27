@@ -1,41 +1,104 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/**
+ * Konner Unity Input Code Demo.txt
+ * Displaying Konner Unity Input Code Demo.txt.
+ */
 public class InputManager : MonoBehaviour
 {
-    private PlayerInput playerInput;
 
-    private InputAction touchPositionAction;
-    private InputAction touchPressAction;
+    [SerializeField] private InputActionAsset playerControls;  // The input action asset that contains all the actions
+    [SerializeField] private InputActionReference interact;    // The reference to the Interact action
+    [SerializeField] private InputActionReference jump;        // The reference to the Jump action
+    [SerializeField] private InputActionReference move;        // The reference to the Move action
+
+    public Vector2 movementInput;
+    public bool isInteracting = false;
+    public bool isJumping = false;
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        playerInput = GetComponent<PlayerInput>();
-        touchPressAction = playerInput.actions.FindAction("TouchPress");
-        touchPositionAction = playerInput.actions.FindAction("TouchPosition");
+        DontDestroyOnLoad(GameObject.Find("EventSystem"));
+        move.action.performed += ctx => MoveHandler(ctx);
+        move.action.canceled += ctx => MoveCanceledHandler(ctx);
+
+        interact.action.performed += ctx => InteractHandler(ctx);
+        interact.action.canceled += ctx => InteractCanceledHandler(ctx);
+
+        jump.action.performed += ctx => JumpHandler(ctx);
+        jump.action.canceled += ctx => JumpCanceledHandler(ctx);
+
+        PlayerControlsEnable(); // Enable the player controls by default
     }
 
-    private void OnEnable()
+    #region Input Handelers
+    private void MoveHandler(InputAction.CallbackContext ctx)
     {
-        touchPressAction.performed += TouchPressed;
-        touchPressAction.canceled += TouchUnpressed;
-
+        movementInput = ctx.ReadValue<Vector2>();
     }
 
-    private void OnDisable()
+    private void MoveCanceledHandler(InputAction.CallbackContext ctx)
     {
-        touchPressAction.performed -= TouchPressed;
-        touchPressAction.canceled -= TouchUnpressed;
+        movementInput = Vector2.zero;
     }
 
-    private void TouchPressed(InputAction.CallbackContext context)
+    private void InteractHandler(InputAction.CallbackContext ctx)
     {
-        Vector2 position = Camera.main.ScreenToWorldPoint(touchPositionAction.ReadValue<Vector2>());
+        isInteracting = true;   // Can pass this variable to another script that handels interaction that needs to know if the interact key is currently being passed
     }
 
-    private void TouchUnpressed(InputAction.CallbackContext context)
+    private void InteractCanceledHandler(InputAction.CallbackContext ctx)
     {
-
+        isInteracting = false;
     }
+
+    private void JumpHandler(InputAction.CallbackContext ctx)
+    {
+        isJumping = true;
+    }
+
+    private void JumpCanceledHandler(InputAction.CallbackContext ctx)
+    {
+        isJumping = false;
+    }
+    #endregion
+
+
+    #region Enable & Disable Actions
+    public void PlayerControlsEnable()
+    {
+        playerControls.Enable(); // Enable the player controls
+    }
+
+    public void PlayerControlsDisable()
+    {
+        playerControls.Disable(); // Disable the player controls
+    }
+
+    public void MoveEnable()
+    {
+        move.action.Enable(); // Enable the Move action
+    }
+
+    public void MoveDisable()
+    {
+        move.action.Disable(); // Disable the Move action
+    }
+
+    public void InteractEnable()
+    {
+        interact.action.Enable(); // Enable the Interact action
+    }
+
+    public void InteractDisable()
+    {
+        interact.action.Disable(); // Disable the Interact action
+    }
+    #endregion
+
 }
+
