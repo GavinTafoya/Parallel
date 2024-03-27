@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,12 +10,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask groundLayer, wallLayer;
     [SerializeField] bool isGrounded, isCapped, isLeftWalled, isRightWalled;
     private float xDir = 0;
+    private InputManager inputManager;
 
     // Start is called before the first frame update
     void Start()
     {
         otherRb = other.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
+        inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(other);
     }
@@ -22,7 +25,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        /*xDir = inputManager.GetLeft() ? -1 : (inputManager.GetRight() ? 1 : 0);
+        xDir = inputManager.movementInput.x;
 
         isGrounded = Physics2D.OverlapBox((Vector2) groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer)
             || Physics2D.OverlapBox((Vector2) groundChecks[1].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer);
@@ -62,12 +65,12 @@ public class PlayerController : MonoBehaviour
             otherRb.gravityScale = 1;
         }
 
-        if (isCapped) StartCoroutine(StopJump());*/
+        if (isCapped) StartCoroutine(StopJump());
     }
 
     private void Update()
     {
-        /*if (inputManager.GetJump() && isGrounded)
+        if (inputManager.isJumping && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, 10f);
             otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
