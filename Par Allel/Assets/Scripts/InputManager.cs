@@ -9,20 +9,22 @@ using UnityEngine.InputSystem;
  */
 public class InputManager : MonoBehaviour
 {
-
     [SerializeField] private InputActionAsset playerControls;  // The input action asset that contains all the actions
     [SerializeField] private InputActionReference interact;    // The reference to the Interact action
     [SerializeField] private InputActionReference jump;        // The reference to the Jump action
     [SerializeField] private InputActionReference move;        // The reference to the Move action
+    [SerializeField] private InputActionReference click;        // The reference to the Click action
 
-    public Vector2 movementInput;
+    public float movementInput;
     public bool isInteracting = false;
     public bool isJumping = false;
+    public bool isClicking = false;
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(GameObject.Find("EventSystem"));
+
         move.action.performed += ctx => MoveHandler(ctx);
         move.action.canceled += ctx => MoveCanceledHandler(ctx);
 
@@ -32,18 +34,21 @@ public class InputManager : MonoBehaviour
         jump.action.performed += ctx => JumpHandler(ctx);
         jump.action.canceled += ctx => JumpCanceledHandler(ctx);
 
+        click.action.performed += ctx => ClickHandler(ctx);
+        click.action.canceled += ctx => ClickCanceledHandler(ctx);
+
         PlayerControlsEnable(); // Enable the player controls by default
     }
 
     #region Input Handelers
     private void MoveHandler(InputAction.CallbackContext ctx)
     {
-        movementInput = ctx.ReadValue<Vector2>();
+        movementInput = ctx.ReadValue<float>();
     }
 
     private void MoveCanceledHandler(InputAction.CallbackContext ctx)
     {
-        movementInput = Vector2.zero;
+        movementInput = 0;
     }
 
     private void InteractHandler(InputAction.CallbackContext ctx)
@@ -64,6 +69,18 @@ public class InputManager : MonoBehaviour
     private void JumpCanceledHandler(InputAction.CallbackContext ctx)
     {
         isJumping = false;
+    }
+
+    private void ClickHandler(InputAction.CallbackContext ctx)
+    {
+        Debug.Log("Bingo");
+        isClicking = true;
+    }
+
+    private void ClickCanceledHandler(InputAction.CallbackContext ctx)
+    {
+        Debug.Log("Aww");
+        isClicking = false;
     }
     #endregion
 

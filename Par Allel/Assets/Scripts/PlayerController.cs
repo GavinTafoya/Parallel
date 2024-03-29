@@ -1,9 +1,9 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    // Various
     [SerializeField] GameObject other;
     Rigidbody2D rb, otherRb;
     [SerializeField] Transform[] groundChecks, wallChecks, roofChecks;
@@ -18,14 +18,12 @@ public class PlayerController : MonoBehaviour
         otherRb = other.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
         inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
-        DontDestroyOnLoad(gameObject);
-        DontDestroyOnLoad(other);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        xDir = inputManager.movementInput.x;
+        xDir = inputManager.movementInput;
 
         isGrounded = Physics2D.OverlapBox((Vector2) groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer)
             || Physics2D.OverlapBox((Vector2) groundChecks[1].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer);
