@@ -12,7 +12,7 @@ public class TitleScreen : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (inputManager.isInteracting || Input.GetKey(KeyCode.E))
+        if (Input.inputString.ToLower() == "cd+")
         {
             StartGame();
         }
