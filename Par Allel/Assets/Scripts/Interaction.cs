@@ -5,6 +5,7 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     [SerializeField] private GameObject target;
+    private bool hasInteracted = false;
 
     // Start is called before the first frame update
     void Start()
@@ -15,9 +16,10 @@ public class Interaction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (true) // do some condition idk
+        if (!hasInteracted) // do some condition idk
         {
             target.SendMessage("Action");
+            hasInteracted = true;
         }
     }
 }
