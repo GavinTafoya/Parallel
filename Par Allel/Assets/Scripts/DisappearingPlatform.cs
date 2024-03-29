@@ -8,12 +8,6 @@ public class DisappearingPlatform : MonoBehaviour
         InvokeRepeating(nameof(ToggleCollision), 0, 1.5f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void ToggleCollision()
     {
         foreach (Collider2D collider in transform.GetComponentsInChildren<Collider2D>())
@@ -26,3 +20,4 @@ public class DisappearingPlatform : MonoBehaviour
         else sprite.color = Color.red;
     }
 }
+// 214

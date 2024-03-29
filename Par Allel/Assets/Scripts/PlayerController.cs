@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] bool isGrounded, isCapped, isLeftWalled, isRightWalled;
     private InputManager inputManager;
     private float xDir = 0;
-    private InputManager inputManager;
 
     // Start is called before the first frame update
     void Start()
@@ -90,3 +89,4 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(.02f);
     }
 }
+// 182

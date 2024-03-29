@@ -7,3 +7,4 @@ public class Exit : MonoBehaviour
         GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
     }
 }
+// 14

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FloatingJoystick : MonoBehaviour
@@ -13,3 +11,4 @@ public class FloatingJoystick : MonoBehaviour
         rect = GetComponent<RectTransform>();
     }
 }
+// 70

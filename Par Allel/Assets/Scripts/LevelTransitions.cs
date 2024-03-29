@@ -36,3 +36,4 @@ public class LevelTransitions : MonoBehaviour
         GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>().Follow = GameObject.Find("MiddleWall").transform;
     }
 }
+// 204

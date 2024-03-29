@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -19,14 +17,6 @@ public class InputManager : MonoBehaviour
     public bool isInteracting = false;
     public bool isJumping = false;
     public bool isClicking = false;
-
-    private Rect leftButtonArea;
-    private Rect rightButtonArea;
-    private Rect jumpButtonArea;
-
-    private bool MovingLeft = false;
-    private bool MovingRight = false;
-    private bool Jumping = false;
 
     private void Awake()
     {
@@ -127,3 +117,4 @@ public class InputManager : MonoBehaviour
 
 }
 
+// 137
