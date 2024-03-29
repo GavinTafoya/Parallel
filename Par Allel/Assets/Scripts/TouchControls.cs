@@ -69,6 +69,7 @@ public class TouchControls : MonoBehaviour
     private void TouchOnFingerDown(Finger finger)
     {
         FindJoystick();
+
         if (movementFinger == null && joystickLocation.Contains(finger.screenPosition))
         {
             movementFinger = finger;
@@ -80,5 +81,15 @@ public class TouchControls : MonoBehaviour
     {
         // TODO: player movement updating
         inputManager.movementInput = movementAmount.x;
+        inputManager.isJumping = movementAmount.y > 0.75f;
+    }
+
+    public void ResetMovement()
+    {
+        movementFinger = null;
+        joystick.knob.anchoredPosition = Vector2.zero;
+        movementAmount = Vector2.zero;
+        inputManager.movementInput = 0;
+        inputManager.isJumping = false;
     }
 }
