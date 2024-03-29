@@ -3,16 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
-    private InputManager inputManager;
-
-    private void Start()
-    {
-        inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
-    }
-
     private void FixedUpdate()
     {
-        if (Input.inputString.ToLower() == "cd+")
+        //Debug.Log(Input.GetKey(KeyCode.C) + " " + Input.GetKey(KeyCode.D) + " " + Input.GetKey(KeyCode.Equals));
+        if (Input.GetKey(KeyCode.C) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Equals))
         {
             StartGame();
         }

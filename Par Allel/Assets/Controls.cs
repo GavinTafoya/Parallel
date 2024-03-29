@@ -81,7 +81,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""8622ac96-9523-45c7-8f7d-401dc39ce683"",
-                    ""path"": """",
+                    ""path"": ""<Pointer>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Mobile"",

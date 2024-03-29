@@ -9,7 +9,6 @@ using UnityEngine.InputSystem;
  */
 public class InputManager : MonoBehaviour
 {
-
     [SerializeField] private InputActionAsset playerControls;  // The input action asset that contains all the actions
     [SerializeField] private InputActionReference interact;    // The reference to the Interact action
     [SerializeField] private InputActionReference jump;        // The reference to the Jump action
@@ -25,6 +24,7 @@ public class InputManager : MonoBehaviour
     {
         DontDestroyOnLoad(gameObject);
         DontDestroyOnLoad(GameObject.Find("EventSystem"));
+
         move.action.performed += ctx => MoveHandler(ctx);
         move.action.canceled += ctx => MoveCanceledHandler(ctx);
 

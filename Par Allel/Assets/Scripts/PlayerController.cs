@@ -1,11 +1,9 @@
 using System.Collections;
-using Unity.Loading;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    // Various
     [SerializeField] GameObject other;
     Rigidbody2D rb, otherRb;
     [SerializeField] Transform[] groundChecks, wallChecks, roofChecks;
