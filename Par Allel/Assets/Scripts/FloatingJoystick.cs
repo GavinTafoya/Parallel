@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FloatingJoystick : MonoBehaviour
@@ -10,5 +11,12 @@ public class FloatingJoystick : MonoBehaviour
     {
         rect = GetComponent<RectTransform>();
     }
+
+    private void Start()
+    {
+        if (SystemInfo.deviceType != DeviceType.Handheld)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
-// 70

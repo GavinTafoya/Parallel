@@ -23,4 +23,3 @@ public class DestroyDupe : MonoBehaviour
         }
     }
 }
-// 10

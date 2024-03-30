@@ -1,4 +1,6 @@
 using Cinemachine;
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,8 +23,7 @@ public class LevelTransitions : MonoBehaviour
         levelCounter++;
         if ((levelCounter - 1) == spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
-        a.transform.position = spawnLocations[levelCounter - 1];
-        b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
+        StartCoroutine("TP_Players");
         PlayerPrefs.SetInt("levelCount", levelCounter);
     }
 
@@ -34,6 +35,18 @@ public class LevelTransitions : MonoBehaviour
     public void FindCameraTarget(Scene old, Scene news)
     {
         GameObject.Find("Virtual Camera").GetComponent<CinemachineVirtualCamera>().Follow = GameObject.Find("MiddleWall").transform;
+    }
+
+    public void Teleport()
+    {
+        StartCoroutine("TP_Players");
+    }
+
+    private IEnumerator TP_Players()
+    {
+        yield return new WaitForSeconds(.5f);
+        a.transform.position = spawnLocations[levelCounter - 1];
+        b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
     }
 }
 // 204

@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: ab5d183164da7f648bb7b7563f9c5c6c
   - enabled: 1
+    path: Assets/Scenes/ContainmentRoom.unity
+    guid: 21c80744c44dfdf41b0c347f82c0a358
+  - enabled: 1
     path: Assets/Scenes/Test level.unity
     guid: 2ade190017ad90647becbe492c1a2109
   - enabled: 1
