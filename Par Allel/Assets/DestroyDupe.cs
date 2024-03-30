@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -12,7 +8,7 @@ public class DestroyDupe : MonoBehaviour
     {
         if(gameObject.GetType() == typeof(EventSystem))
         {
-            if (GameObject.FindObjectsOfType<EventSystem>().Length > 1)
+            if (FindObjectsOfType<EventSystem>().Length > 1)
             {
                 Destroy(gameObject);
             }
@@ -20,16 +16,11 @@ public class DestroyDupe : MonoBehaviour
 
         if(gameObject.GetType() == typeof(Camera))
         {
-            if (GameObject.FindObjectsOfType<Camera>().Length > 1)
+            if (FindObjectsOfType<Camera>().Length > 1)
             {
                 Destroy(gameObject);
             }
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+// 10

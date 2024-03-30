@@ -31,7 +31,6 @@ public class TouchControls : MonoBehaviour
         ETouch.Touch.onFingerUp -= TouchOnFingerUp;
         ETouch.Touch.onFingerMove -= TouchOnFingerMove;
         EnhancedTouchSupport.Enable();
-
     }
 
     private void TouchOnFingerMove(Finger finger)
@@ -95,3 +94,4 @@ public class TouchControls : MonoBehaviour
         inputManager.isJumping = false;
     }
 }
+// 64
