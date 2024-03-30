@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FloatingJoystick : MonoBehaviour
@@ -11,5 +12,13 @@ public class FloatingJoystick : MonoBehaviour
     void Awake()
     {
         rect = GetComponent<RectTransform>();
+    }
+
+    private void Start()
+    {
+        if (SystemInfo.deviceType != DeviceType.Handheld)
+        {
+            gameObject.SetActive(false);
+        }
     }
 }

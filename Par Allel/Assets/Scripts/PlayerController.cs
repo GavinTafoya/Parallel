@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
         otherRb = other.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
         inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
+        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(other.gameObject);
     }
 
     // Update is called once per frame
