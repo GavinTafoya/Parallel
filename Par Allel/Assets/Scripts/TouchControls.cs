@@ -79,8 +79,10 @@ public class TouchControls : MonoBehaviour
     private void Update()
     {
         // TODO: player movement updating
-        inputManager.movementInput = movementAmount.x;
-        inputManager.isJumping = movementAmount.y > 0.75f;
+        if (SystemInfo.deviceType == DeviceType.Handheld) {
+            inputManager.movementInput = movementAmount.x;
+            inputManager.isJumping = movementAmount.y > 0.75f;
+        }
     }
 
     public void ResetMovement()

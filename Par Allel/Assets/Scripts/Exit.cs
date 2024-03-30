@@ -4,7 +4,10 @@ public class Exit : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
+        if(collision.gameObject.tag == "Player")
+        {
+            GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
+        }
     }
 }
 // 14
