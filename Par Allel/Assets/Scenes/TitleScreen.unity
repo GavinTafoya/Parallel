@@ -397,11 +397,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f134568e4ecbee4791c5259a9d113cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  a: {fileID: 0}
-  b: {fileID: 0}
+  a: {fileID: 1267207004}
+  b: {fileID: 1322324974}
   spawnLocations:
-  - {x: -1.5, y: -4}
-  - {x: -11, y: 5}
+  - {x: -10, y: 3.5}
+  - {x: -1, y: -1}
+  - {x: -14, y: -3}
   viewportRects:
   - serializedVersion: 2
     x: 0
@@ -1113,6 +1114,11 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!1 &1267207004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6665059735526267451, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
+  m_PrefabInstance: {fileID: 7293971924287944479}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1276612957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1271,6 +1277,11 @@ MonoBehaviour:
     width: 400
     height: 400
   inputManager: {fileID: 1276612960}
+--- !u!1 &1322324974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1010227430033686770, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
+  m_PrefabInstance: {fileID: 7293971924287944479}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1543888227
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,9 +7,9 @@ public class LevelTransitions : MonoBehaviour
 {
     [SerializeField] private GameObject a, b;
     [SerializeField] private Vector2[] spawnLocations;
+    private int levelCounter = 0;
     [SerializeField] private Rect[] viewportRects;
     [SerializeField] private float[] cameraSizes;
-    private int levelCounter = 1;
 
     private GameObject virtualCam1;
     private GameObject virtualCam2;
@@ -33,8 +33,7 @@ public class LevelTransitions : MonoBehaviour
         levelCounter++;
         if ((levelCounter - 1) == spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
-        a.transform.position = spawnLocations[levelCounter - 1];
-        b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
+        StartCoroutine("TP_Players");
         //PlayerPrefs.SetInt("levelCount", levelCounter);
     }
 
@@ -51,6 +50,19 @@ public class LevelTransitions : MonoBehaviour
         virtualCam2.GetComponent<CinemachineVirtualCamera>().m_Lens.OrthographicSize = cameraSizes[levelCounter - 1];
         GetComponent<Camera>().rect = viewportRects[(levelCounter - 1) * 2];
         camera2.GetComponent<Camera>().rect = viewportRects[(levelCounter - 1) * 2 + 1];
+    }
+
+    public void Teleport()
+    {
+        StartCoroutine("TP_Players");
+    }
+
+    private IEnumerator TP_Players()
+    {
+        yield return new WaitForSeconds(.5f);
+        Debug.Log(spawnLocations[levelCounter - 1]);
+        a.transform.position = spawnLocations[levelCounter - 1];
+        b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
     }
 }
 // 204

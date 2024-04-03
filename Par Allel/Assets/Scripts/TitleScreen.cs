@@ -19,6 +19,7 @@ public class TitleScreen : MonoBehaviour
         //if (PlayerPrefs.HasKey("levelCount")) levelCounter = PlayerPrefs.GetInt("levelCount");
         GameObject.Find("Main Camera").GetComponent<LevelTransitions>().SetLevel(levelCounter);
         SceneManager.LoadScene(1);
+        GameObject.Find("Main Camera").GetComponent<LevelTransitions>().Teleport();
     }
 }
 // 81
