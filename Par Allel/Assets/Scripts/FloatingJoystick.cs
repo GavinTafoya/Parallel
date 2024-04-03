@@ -16,7 +16,7 @@ public class FloatingJoystick : MonoBehaviour
     {
         if (SystemInfo.deviceType != DeviceType.Handheld)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
