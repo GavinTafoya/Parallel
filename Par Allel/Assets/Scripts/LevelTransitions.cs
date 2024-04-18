@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+// not touching this much yet until we have levels more figured out
 public class LevelTransitions : MonoBehaviour
 {
     [SerializeField] private GameObject a, b;
@@ -33,9 +34,7 @@ public class LevelTransitions : MonoBehaviour
         levelCounter++;
         if ((levelCounter - 1) == spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
-        StartCoroutine("TP_Players");
-        GameObject.Find("TouchManager").GetComponent<TouchControls>().FindJoystick();
-        //PlayerPrefs.SetInt("levelCount", levelCounter);
+        StartCoroutine(TP_Players());
     }
 
     public void SetLevel(int level)
@@ -55,7 +54,7 @@ public class LevelTransitions : MonoBehaviour
 
     public void Teleport()
     {
-        StartCoroutine("TP_Players");
+        StartCoroutine(TP_Players());
     }
 
     private IEnumerator TP_Players()

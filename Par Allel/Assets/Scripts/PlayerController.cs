@@ -83,10 +83,7 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, 10f);
             otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
         }
-        /*if (Input.GetButtonUp("Jump"))
-        {
-            StartCoroutine(StopJump());
-        }*/
+        UpdateAnimations();
     }
 
     private IEnumerator StopJump()
@@ -107,7 +104,7 @@ public class PlayerController : MonoBehaviour
         else animState = AnimatorState.Idle;
 
         animA.SetInteger("state", (int) animState);
-        animB.SetInteger("state", (int)animState);
+        animB.SetInteger("state", (int) animState);
     }
 }
 // 182
