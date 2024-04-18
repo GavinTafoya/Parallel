@@ -58,11 +58,11 @@ public class PlayerController : MonoBehaviour
                 rb.gravityScale = 0;
                 otherRb.gravityScale = 0;
             }
-            if (Physics2D.OverlapBox((Vector2)groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(1f, 1.3f), 0, groundLayer) && transform.position.y != other.transform.position.y)
+            if (Physics2D.OverlapBox((Vector2)groundChecks[0].position - new Vector2(0, 0.65f), new Vector2(1f, 1.3f), 0, groundLayer) && transform.position.y != other.transform.position.y)
             {
                 other.transform.position = transform.position * new Vector2(-1, 1);
             }
-            else if (Physics2D.OverlapBox((Vector2)groundChecks[1].position - new Vector2(0, 0.515f), new Vector2(1f, 1.3f), 0, groundLayer) && transform.position.y != other.transform.position.y)
+            else if (Physics2D.OverlapBox((Vector2)groundChecks[1].position - new Vector2(0, 0.65f), new Vector2(1f, 1.3f), 0, groundLayer) && transform.position.y != other.transform.position.y)
             {
                 transform.position = other.transform.position * new Vector2(-1, 1);
             }
