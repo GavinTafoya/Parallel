@@ -1166,7 +1166,7 @@ MonoBehaviour:
   m_ActionEvents: []
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Mobile
-  m_DefaultActionMap: Touch
+  m_DefaultActionMap: Movement
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 201793517}
 --- !u!4 &1276612959
@@ -1270,6 +1270,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 1878248288}
+  leftButton:
+    serializedVersion: 2
+    x: 50
+    y: 50
+    width: 220
+    height: 200
+  rightButton:
+    serializedVersion: 2
+    x: 350
+    y: 50
+    width: 220
+    height: 200
+  jumpButton:
+    serializedVersion: 2
+    x: 1000
+    y: 50
+    width: 220
+    height: 200
   joystickLocation:
     serializedVersion: 2
     x: 300

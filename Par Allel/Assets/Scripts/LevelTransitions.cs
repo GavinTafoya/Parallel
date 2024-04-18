@@ -34,6 +34,7 @@ public class LevelTransitions : MonoBehaviour
         if ((levelCounter - 1) == spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
         StartCoroutine("TP_Players");
+        GameObject.Find("TouchManager").GetComponent<TouchControls>().FindJoystick();
         //PlayerPrefs.SetInt("levelCount", levelCounter);
     }
 
