@@ -645,6 +645,12 @@ MonoBehaviour:
   isCapped: 0
   isLeftWalled: 0
   isRightWalled: 0
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 21300000, guid: 90f3c0e2d12988c4c9d01d796997ebdc, type: 3}
+  brokenHeart: {fileID: 21300000, guid: 65e8adf020a15ff45a77c547e169e628, type: 3}
 --- !u!50 &3569650413823723766
 Rigidbody2D:
   serializedVersion: 4
