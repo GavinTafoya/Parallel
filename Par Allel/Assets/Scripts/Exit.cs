@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Exit : MonoBehaviour
@@ -6,8 +7,15 @@ public class Exit : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
+            StartCoroutine(Open());
         }
+    }
+
+    private IEnumerator Open()
+    {
+        GetComponent<Animator>().SetBool("triggered", true);
+        yield return new WaitForSeconds(0.5f);
+        GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
     }
 }
 // 14

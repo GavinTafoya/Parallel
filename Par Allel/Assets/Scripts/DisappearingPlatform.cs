@@ -14,10 +14,6 @@ public class DisappearingPlatform : MonoBehaviour
         {
             collider.enabled = !collider.enabled;
         }
-
-        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
-        if (sprite.color.Equals(Color.red)) sprite.color = Color.green;
-        else sprite.color = Color.red;
     }
 }
-// 214
+//25
