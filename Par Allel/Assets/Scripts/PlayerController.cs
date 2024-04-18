@@ -1,6 +1,11 @@
 using System.Collections;
 using UnityEngine;
 
+public enum AnimatorState
+{
+    Idle, Falling, Jumping, Running
+}
+
 public class PlayerController : MonoBehaviour
 {
     // Various
@@ -9,6 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Transform[] groundChecks, wallChecks, roofChecks;
     [SerializeField] LayerMask groundLayer, wallLayer;
     [SerializeField] bool isGrounded, isCapped, isLeftWalled, isRightWalled;
+    private Animator animA, animB;
+    private AnimatorState animState;
     private InputManager inputManager;
     private float xDir = 0;
 
@@ -18,6 +25,8 @@ public class PlayerController : MonoBehaviour
         otherRb = other.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
         inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
+        animA = GetComponent<Animator>();
+        animB = other.GetComponent<Animator>();
         DontDestroyOnLoad(transform.parent.gameObject);
     }
 
@@ -88,6 +97,17 @@ public class PlayerController : MonoBehaviour
             otherRb.velocity *= new Vector2(1, 0);
         }
         yield return new WaitForSeconds(.02f);
+    }
+
+    private void UpdateAnimations()
+    {
+        if (!isGrounded && rb.velocity.y > 0) animState = AnimatorState.Jumping;
+        else if (!isGrounded) animState = AnimatorState.Falling;
+        else if (Mathf.Abs(rb.velocity.x) > 0) animState = AnimatorState.Running;
+        else animState = AnimatorState.Idle;
+
+        animA.SetInteger("state", (int) animState);
+        animB.SetInteger("state", (int)animState);
     }
 }
 // 182
