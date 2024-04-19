@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,427 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Alien Ghost Idle_0
+      rect:
+        serializedVersion: 2
+        x: 2697
+        y: 339
+        width: 1060
+        height: 2400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0720ff354c4f3554b80e91ec69c7cb14
+      internalID: 1508553397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_1
+      rect:
+        serializedVersion: 2
+        x: 3598
+        y: 2738
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e02e451e8d2f614daaf38124a202b21
+      internalID: -99606650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_2
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 2686
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64e5a12a0a5de3428a23a2a282de71e
+      internalID: 1411772457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_3
+      rect:
+        serializedVersion: 2
+        x: 4057
+        y: 437
+        width: 1064
+        height: 2469
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2ba90c642a2bb43ab401cbd56ab3c7
+      internalID: 134957109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_4
+      rect:
+        serializedVersion: 2
+        x: 5319
+        y: 346
+        width: 1071
+        height: 2382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62cedc3655fd5f04b96db6a63af27df9
+      internalID: -30632777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_5
+      rect:
+        serializedVersion: 2
+        x: 6414
+        y: 2634
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c261d7dbcc1aeaf4eb7fa014105623dc
+      internalID: -1208648393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_6
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 193
+        width: 1060
+        height: 2395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a640c5b595aa04c42bc1fa11ee70a76c
+      internalID: 904373511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_7
+      rect:
+        serializedVersion: 2
+        x: 6414
+        y: 2556
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d921ccfc7d5ec674ea21e55a7be3d50c
+      internalID: -1289880657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_8
+      rect:
+        serializedVersion: 2
+        x: 6571
+        y: 193
+        width: 1069
+        height: 2395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2831fd262ddc354f96327ccd4d06262
+      internalID: -1374959442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_9
+      rect:
+        serializedVersion: 2
+        x: 7640
+        y: 2530
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad0c018a787e624d8c038caad1586e7
+      internalID: 1768071237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_10
+      rect:
+        serializedVersion: 2
+        x: 7814
+        y: 103
+        width: 1066
+        height: 2364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafef7080b894e54ba5bea67c9e76730
+      internalID: -1170454716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_11
+      rect:
+        serializedVersion: 2
+        x: 8839
+        y: 2452
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58564302191636e4993f31506fce0e68
+      internalID: -1365708797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_12
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 72
+        width: 1060
+        height: 2356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8ce8927e7d1e2a498533f867d4707c9
+      internalID: -1011892096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_13
+      rect:
+        serializedVersion: 2
+        x: 4041
+        y: 2295
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9ebc7319afcb747881b8ec9d5702d6
+      internalID: -643058908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_14
+      rect:
+        serializedVersion: 2
+        x: 4015
+        y: 2165
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6148cb6de53be438a91952b864533e
+      internalID: 692639084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 1852
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f27fe4f385a3e14d8a82cd2076296bc
+      internalID: -27382950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_16
+      rect:
+        serializedVersion: 2
+        x: 6545
+        y: 1356
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f591d2e947392564683d746957f0f4e5
+      internalID: -1147826388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_17
+      rect:
+        serializedVersion: 2
+        x: 6023
+        y: 339
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45c2947618ebdb44893011b17677a59
+      internalID: -1386394500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_18
+      rect:
+        serializedVersion: 2
+        x: 6873
+        y: 185
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c59aee47f0ef04fba6f832512b2e3f
+      internalID: -1840808507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien Ghost Idle_19
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 156
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3d40e190be30b4c9a484cb668c32b6
+      internalID: -1640417049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +552,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Alien Ghost Idle_0: 1508553397
+      Alien Ghost Idle_1: -99606650
+      Alien Ghost Idle_10: -1170454716
+      Alien Ghost Idle_11: -1365708797
+      Alien Ghost Idle_12: -1011892096
+      Alien Ghost Idle_13: -643058908
+      Alien Ghost Idle_14: 692639084
+      Alien Ghost Idle_15: -27382950
+      Alien Ghost Idle_16: -1147826388
+      Alien Ghost Idle_17: -1386394500
+      Alien Ghost Idle_18: -1840808507
+      Alien Ghost Idle_19: -1640417049
+      Alien Ghost Idle_2: 1411772457
+      Alien Ghost Idle_3: 134957109
+      Alien Ghost Idle_4: -30632777
+      Alien Ghost Idle_5: -1208648393
+      Alien Ghost Idle_6: 904373511
+      Alien Ghost Idle_7: -1289880657
+      Alien Ghost Idle_8: -1374959442
+      Alien Ghost Idle_9: 1768071237
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

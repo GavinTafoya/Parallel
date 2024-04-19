@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum AnimatorState
 {
@@ -8,16 +9,27 @@ public enum AnimatorState
 
 public class PlayerController : MonoBehaviour
 {
-    // Various
-    [SerializeField] GameObject other;
-    Rigidbody2D rb, otherRb;
-    [SerializeField] Transform[] groundChecks, wallChecks, roofChecks;
-    [SerializeField] LayerMask groundLayer, wallLayer;
-    [SerializeField] bool isGrounded, isCapped, isLeftWalled, isRightWalled;
+    // Platforming Specific
+    [SerializeField] private GameObject other;
+    [SerializeField] private Transform[] groundChecks, wallChecks, roofChecks;
+    [SerializeField] private LayerMask groundLayer, wallLayer;
+    [SerializeField] private bool isGrounded, isCapped, isLeftWalled, isRightWalled;
+    private Rigidbody2D rb, otherRb;
+
+    // Animation
     private Animator animA, animB;
     private AnimatorState animState;
+
+    // Input
     private InputManager inputManager;
     private float xDir = 0;
+
+    // Health
+    [SerializeField] private Image[] hearts = new Image[3];
+    [SerializeField] private Sprite fullHeart;
+    [SerializeField] private Sprite brokenHeart;
+    private int health = 3;
+    private float invincibleTimer;
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +37,17 @@ public class PlayerController : MonoBehaviour
         otherRb = other.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
         inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
-        animA = GetComponent<Animator>();
-        animB = other.GetComponent<Animator>();
+        animA = GetComponentInChildren<Animator>();
+        animB = other.GetComponentInChildren<Animator>();
         DontDestroyOnLoad(transform.parent.gameObject);
+        UpdateHealthBar();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         xDir = inputManager.movementInput;
+        invincibleTimer -= Time.fixedDeltaTime;
 
         isGrounded = Physics2D.OverlapBox((Vector2) groundChecks[0].position - new Vector2(0, 0.665f), new Vector2(0.3f, .015f), 0, groundLayer)
             || Physics2D.OverlapBox((Vector2) groundChecks[1].position - new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer);
@@ -94,6 +108,25 @@ public class PlayerController : MonoBehaviour
             otherRb.velocity *= new Vector2(1, 0);
         }
         yield return new WaitForSeconds(.02f);
+    }
+
+    public void Hurt()
+    {
+        Debug.Log("ouchie");
+        if (invincibleTimer > 0) return;
+        invincibleTimer = 1;
+        health--;
+        UpdateHealthBar();
+    }
+
+    private void UpdateHealthBar()
+    {
+        /*GameObject[] heartobj = GameObject.FindGameObjectsWithTag("Health");
+        for (int i = 0; i < heartobj.Length; i++) hearts[i] = heartobj[i].GetComponent<Image>();
+
+        hearts[0].sprite = (health == 3) ? fullHeart : brokenHeart;
+        hearts[1].sprite = (health >= 2) ? fullHeart : brokenHeart;
+        hearts[2].sprite = (health >= 1) ? fullHeart : brokenHeart;*/
     }
 
     private void UpdateAnimations()
