@@ -94,8 +94,8 @@ public class PlayerController : MonoBehaviour
     {
         if (inputManager.isJumping && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
-            otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
+            rb.velocity = new Vector2(rb.velocity.x, 8f);
+            otherRb.velocity = new Vector2(otherRb.velocity.x, 8f);
         }
         UpdateAnimations();
     }
