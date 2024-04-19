@@ -27,7 +27,8 @@ public class LevelTransitions : MonoBehaviour
     public void NextLevel()
     {
         levelCounter++;
-        if ((levelCounter - 1) == spawnLocations.Length) levelCounter = 0;
+        Debug.Log(levelCounter);
+        if (levelCounter== spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
         StartCoroutine("TP_Players");
         //PlayerPrefs.SetInt("levelCount", levelCounter);
