@@ -1,5 +1,6 @@
 using Cinemachine;
 using System.Collections;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,14 +20,9 @@ public class LevelTransitions : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //DontDestroyOnLoad(gameObject);
-        //camera2 = GameObject.Find("Second Camera");
-        //DontDestroyOnLoad(camera2);
-        //virtualCam1 = GameObject.Find("Virtual Camera");
-        //DontDestroyOnLoad(virtualCam1);
-        //virtualCam2 = GameObject.Find("Virtual Camera (1)");
-        //DontDestroyOnLoad(virtualCam2);
-        //SceneManager.activeSceneChanged += FindCameraTarget;
+        DontDestroyOnLoad(gameObject);
+        virtualCam1 = GameObject.Find("Virtual Camera");
+        DontDestroyOnLoad(virtualCam1);
     }
 
     public void NextLevel()
@@ -42,6 +38,7 @@ public class LevelTransitions : MonoBehaviour
         levelCounter = level;
     }
 
+    //Not used
     public void FindCameraTarget(Scene old, Scene news)
     {
         virtualCam1.GetComponent<CinemachineVirtualCamera>().Follow = GameObject.Find("Cam1").transform;

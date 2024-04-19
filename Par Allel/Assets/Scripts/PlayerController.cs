@@ -49,14 +49,14 @@ public class PlayerController : MonoBehaviour
         xDir = inputManager.movementInput;
         invincibleTimer -= Time.fixedDeltaTime;
 
-        isGrounded = Physics2D.OverlapBox((Vector2) groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer)
-            || Physics2D.OverlapBox((Vector2) groundChecks[1].position - new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer);
-        isCapped = Physics2D.OverlapBox((Vector2) roofChecks[0].position + new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer)
-            || Physics2D.OverlapBox((Vector2) roofChecks[1].position + new Vector2(0, 0.515f), new Vector2(.9f, .015f), 0, groundLayer);
-        isLeftWalled = Physics2D.OverlapBox((Vector2)wallChecks[0].position - new Vector2(0.5f, 0), new Vector2(.03f, 1f), 0, wallLayer)
-            || Physics2D.OverlapBox((Vector2)wallChecks[1].position + new Vector2(0.5f, 0), new Vector2(.03f, 1f), 0, wallLayer);
-        isRightWalled = Physics2D.OverlapBox((Vector2)wallChecks[2].position + new Vector2(0.5f, 0), new Vector2(.03f, .9f), 0, wallLayer)
-            || Physics2D.OverlapBox((Vector2)wallChecks[3].position - new Vector2(0.5f, 0), new Vector2(.03f, .9f), 0, wallLayer);
+        isGrounded = Physics2D.OverlapBox((Vector2) groundChecks[0].position - new Vector2(0, 0.665f), new Vector2(0.3f, .015f), 0, groundLayer)
+            || Physics2D.OverlapBox((Vector2) groundChecks[1].position - new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer);
+        isCapped = Physics2D.OverlapBox((Vector2) roofChecks[0].position + new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer)
+            || Physics2D.OverlapBox((Vector2) roofChecks[1].position + new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer);
+        isLeftWalled = Physics2D.OverlapBox((Vector2)wallChecks[0].position - new Vector2(0.2f, 0), new Vector2(.03f, 1f), 0, wallLayer)
+            || Physics2D.OverlapBox((Vector2)wallChecks[1].position + new Vector2(0.2f, 0), new Vector2(.03f, 1f), 0, wallLayer);
+        isRightWalled = Physics2D.OverlapBox((Vector2)wallChecks[2].position + new Vector2(0.2f, 0), new Vector2(.03f, .3f), 0, wallLayer)
+            || Physics2D.OverlapBox((Vector2)wallChecks[3].position - new Vector2(0.2f, 0), new Vector2(.03f, .3f), 0, wallLayer);
 
         if ((isRightWalled && xDir > 0) || (isLeftWalled && xDir < 0)) xDir = 0;
 
@@ -72,11 +72,11 @@ public class PlayerController : MonoBehaviour
                 rb.gravityScale = 0;
                 otherRb.gravityScale = 0;
             }
-            if (Physics2D.OverlapBox((Vector2)groundChecks[0].position - new Vector2(0, 0.515f), new Vector2(1f, .015f), 0, groundLayer) && transform.position.y != other.transform.position.y)
+            if (Physics2D.OverlapBox((Vector2)groundChecks[0].position - new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer) && transform.position.y != other.transform.position.y)
             {
                 other.transform.position = transform.position * new Vector2(-1, 1);
             }
-            else if (Physics2D.OverlapBox((Vector2)groundChecks[1].position - new Vector2(0, 0.515f), new Vector2(1f, .015f), 0, groundLayer) && transform.position.y != other.transform.position.y)
+            else if (Physics2D.OverlapBox((Vector2)groundChecks[1].position - new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer) && transform.position.y != other.transform.position.y)
             {
                 transform.position = other.transform.position * new Vector2(-1, 1);
             }
