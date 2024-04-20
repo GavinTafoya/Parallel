@@ -17,8 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainAtrium.unity
     guid: 1ea1721038584aa44a45de6787afe856
-  - enabled: 0
-    path: Assets/Scenes/Test level.unity
-    guid: 2ade190017ad90647becbe492c1a2109
+  - enabled: 1
+    path: Assets/Scenes/Residence.unity
+    guid: 2f54db1a968ebc6438b360092fa98d7f
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dc31bf5bb30ddc743b714fc78ec3b185, type: 2}
