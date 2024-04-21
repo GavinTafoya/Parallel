@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer, wallLayer;
     [SerializeField] private bool isGrounded, isCapped, isLeftWalled, isRightWalled;
     private Rigidbody2D rb, otherRb;
+    private SpriteRenderer aPic, bPic;
 
     // Animation
     private Animator animA, animB;
@@ -34,6 +35,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        aPic = gameObject.GetComponentInChildren<SpriteRenderer>();
+        bPic = other.GetComponentInChildren<SpriteRenderer>();
         otherRb = other.GetComponent<Rigidbody2D>();
         rb = GetComponent<Rigidbody2D>();
         inputManager = GameObject.Find("TouchManager").GetComponent<InputManager>();
@@ -59,6 +62,17 @@ public class PlayerController : MonoBehaviour
             || Physics2D.OverlapBox((Vector2)wallChecks[3].position - new Vector2(0.2f, 0), new Vector2(.03f, .3f), 0, wallLayer);
 
         if ((isRightWalled && xDir > 0) || (isLeftWalled && xDir < 0)) xDir = 0;
+
+        if (xDir > 0)
+        {
+            aPic.flipX = true;
+            bPic.flipX = true;
+        }
+        else if (xDir < 0)
+        {
+            aPic.flipX = false;
+            bPic.flipX = false;
+        }
 
         transform.Translate(new Vector3(xDir * 10, 0, 0) * Time.deltaTime);
         other.transform.Translate(new Vector3(-xDir * 10, 0, 0) * Time.deltaTime);
