@@ -131,7 +131,6 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAnimations()
     {
-        Debug.Log(animState);
         if (!isGrounded && rb.velocity.y > 0) animState = AnimatorState.Jumping;
         else if (!isGrounded) animState = AnimatorState.Falling;
         else if (xDir != 0) animState = AnimatorState.Running;

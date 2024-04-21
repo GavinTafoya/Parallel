@@ -402,7 +402,7 @@ MonoBehaviour:
   spawnLocations:
   - {x: -55, y: 3.5}
   - {x: -41, y: -1}
-  - {x: -14, y: -3}
+  - {x: -55, y: -3}
   viewportRects:
   - serializedVersion: 2
     x: 0

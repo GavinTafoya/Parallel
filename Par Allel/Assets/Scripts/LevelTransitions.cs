@@ -27,10 +27,10 @@ public class LevelTransitions : MonoBehaviour
 
     public void NextLevel()
     {
-        if (levelCounter == spawnLocations.Length) levelCounter = 0;
+        if (levelCounter - 1 == spawnLocations.Length) levelCounter = 0;
         SceneManager.LoadScene(levelCounter);
         StartCoroutine(TP_Players());
-        levelCounter++;
+        Debug.LogError("bing");
     }
 
     public void SetLevel(int level)
@@ -56,10 +56,11 @@ public class LevelTransitions : MonoBehaviour
 
     private IEnumerator TP_Players()
     {
-        yield return new WaitForSeconds(.5f);
-        Debug.Log(spawnLocations[levelCounter - 1]);
+        yield return new WaitForSeconds(.1f);
+        Debug.LogError(levelCounter);
         a.transform.position = spawnLocations[levelCounter - 1];
         b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
+        levelCounter++;
     }
 }
 // 204
