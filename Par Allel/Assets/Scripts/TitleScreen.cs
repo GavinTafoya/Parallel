@@ -12,10 +12,9 @@ public class TitleScreen : MonoBehaviour
     // I hate this but the wall we track for the cinemachine camera doesnt exist until after the scene is done loading
     public void StartGame()
     {
-        int levelCounter = 1;
+        int levelCounter = 0;
         GameObject.Find("Main Camera").GetComponent<LevelTransitions>().SetLevel(levelCounter);
         SceneManager.LoadScene(1);
         GameObject.Find("Main Camera").GetComponent<LevelTransitions>().Teleport();
     }
 }
-// 81
