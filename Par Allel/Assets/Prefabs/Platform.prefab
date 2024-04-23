@@ -86,7 +86,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6683022760171827365}
-  - component: {fileID: 997376888415566451}
   m_Layer: 6
   m_Name: Platform
   m_TagString: Untagged

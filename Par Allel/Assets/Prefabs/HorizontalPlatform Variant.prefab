@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &5746667730647778518
+--- !u!1001 &5714472295714683243
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,12 +10,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3692347551580547362, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_Name
-      value: Upward Platform
+      value: HorizontalPlatform Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3980223144884292429, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f26b7751c37789341947aad7faf0ee87, type: 3}
+      objectReference: {fileID: 21300000, guid: 97307ab184689114d9116873c33238d7, type: 3}
     - target: {fileID: 4470948767500658038, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.33
@@ -26,11 +26,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6683022760171827365, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.25
+      value: -3.26
       objectReference: {fileID: 0}
     - target: {fileID: 6683022760171827365, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5
+      value: 2.19
       objectReference: {fileID: 0}
     - target: {fileID: 6683022760171827365, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70,20 +70,20 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3692347551580547362, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -5239212409449961306}
+      addedObject: {fileID: 1022948973163138702}
   m_SourcePrefab: {fileID: 100100000, guid: e92f383d515892b42ba57a78d3996920, type: 3}
---- !u!1 &9006523413993090548 stripped
+--- !u!1 &8966729323157360713 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3692347551580547362, guid: e92f383d515892b42ba57a78d3996920, type: 3}
-  m_PrefabInstance: {fileID: 5746667730647778518}
+  m_PrefabInstance: {fileID: 5714472295714683243}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-5239212409449961306
+--- !u!114 &1022948973163138702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9006523413993090548}
+  m_GameObject: {fileID: 8966729323157360713}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c532a44ae9a83624c90ca5cccaacb053, type: 3}
@@ -91,4 +91,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 0
   midpoint: 0
-  isVertical: 1
+  isVertical: 0
