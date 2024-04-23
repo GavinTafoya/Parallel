@@ -2735,7 +2735,7 @@ GameObject:
   - component: {fileID: 1173345721}
   - component: {fileID: 1173345720}
   m_Layer: 0
-  m_Name: LeftPanel (1)
+  m_Name: RightPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
