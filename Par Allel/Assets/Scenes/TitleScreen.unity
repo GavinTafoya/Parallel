@@ -352,7 +352,7 @@ Camera:
     height: 10
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 80
+  field of view: 95
   orthographic: 0
   orthographic size: 6.5
   m_Depth: 0
@@ -639,7 +639,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 80
+    FieldOfView: 95
     OrthographicSize: 6.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
@@ -2626,61 +2626,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 170127613516715358, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 622144837996888842, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010227430033686770, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010227430033686770, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1604994351487424145, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1604994351487424145, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1779483104467057608, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1861522177777292238, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1947366069920778225, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3232428927251809683, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4417964705260746412, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4576773850733846668, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 4687508586764516645, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
       propertyPath: m_Name
       value: Players
-      objectReference: {fileID: 0}
-    - target: {fileID: 5098404721944765313, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5548648522755716830, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2720,26 +2668,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5548648522755716830, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665059735526267451, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6665059735526267451, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7306344627173384280, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9013388675316271876, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -12.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 9013388675316271876, guid: 1bdb02cdf28e33c48ade76dbcea96912, type: 3}
-      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

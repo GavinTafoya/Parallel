@@ -573,6 +573,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2580959206750900467, guid: 310b3c69930c9684c8cd1e1c1e37de86, type: 3}
+      propertyPath: dir
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6289748752413708938, guid: 310b3c69930c9684c8cd1e1c1e37de86, type: 3}
       propertyPath: m_Name
       value: SwingPlatform
@@ -980,7 +984,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: -2076960079, guid: c07e58e327cd2d44882345586c3d5672, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7660377, g: 0.7660377, b: 0.7660377, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3441,7 +3445,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: -1028503464, guid: c07e58e327cd2d44882345586c3d5672, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7660377, g: 0.7660377, b: 0.7660377, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
