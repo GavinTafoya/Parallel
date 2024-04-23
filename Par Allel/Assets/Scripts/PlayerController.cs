@@ -147,7 +147,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!isGrounded && rb.velocity.y > 0) animState = AnimatorState.Jumping;
         else if (!isGrounded) animState = AnimatorState.Falling;
-        else if (Mathf.Abs(rb.velocity.x) > 0) animState = AnimatorState.Running;
+        else if (xDir != 0) animState = AnimatorState.Running;
         else animState = AnimatorState.Idle;
 
         animA.SetInteger("state", (int) animState);

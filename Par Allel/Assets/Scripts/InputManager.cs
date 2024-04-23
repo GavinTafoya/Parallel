@@ -71,13 +71,11 @@ public class InputManager : MonoBehaviour
 
     private void ClickHandler(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Bingo");
         isClicking = true;
     }
 
     private void ClickCanceledHandler(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Aww");
         isClicking = false;
     }
     #endregion
