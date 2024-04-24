@@ -352,7 +352,7 @@ Camera:
     height: 10
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 95
+  field of view: 85
   orthographic: 0
   orthographic size: 6.5
   m_Depth: 0
@@ -402,7 +402,9 @@ MonoBehaviour:
   spawnLocations:
   - {x: -55, y: 3.5}
   - {x: -41, y: -1}
-  - {x: -55, y: -3}
+  - {x: -80, y: -3}
+  - {x: -59, y: -3.5}
+  - {x: -54, y: -5}
   viewportRects:
   - serializedVersion: 2
     x: 0
@@ -639,7 +641,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 95
+    FieldOfView: 85
     OrthographicSize: 6.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
