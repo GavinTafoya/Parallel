@@ -134,13 +134,13 @@ public class PlayerController : MonoBehaviour
     }
 
     private void UpdateHealthBar()
-    {
-        /*GameObject[] heartobj = GameObject.FindGameObjectsWithTag("Health");
+    { 
+        GameObject[] heartobj = GameObject.FindGameObjectsWithTag("Health");
         for (int i = 0; i < heartobj.Length; i++) hearts[i] = heartobj[i].GetComponent<Image>();
 
         hearts[0].sprite = (health == 3) ? fullHeart : brokenHeart;
         hearts[1].sprite = (health >= 2) ? fullHeart : brokenHeart;
-        hearts[2].sprite = (health >= 1) ? fullHeart : brokenHeart;*/
+        hearts[2].sprite = (health >= 1) ? fullHeart : brokenHeart;
     }
 
     private void UpdateAnimations()
