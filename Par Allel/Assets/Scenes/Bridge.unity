@@ -1836,6 +1836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3322610735877774657, guid: 811ba06338d969542b9488e21ae09da3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2645,8 +2649,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 32.5
-  orthographic: 0
-  orthographic size: 3.5
+  orthographic: 1
+  orthographic size: 3.4
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -2964,8 +2968,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 32.5
-  orthographic: 0
-  orthographic size: 3.5
+  orthographic: 1
+  orthographic size: 3.4
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
