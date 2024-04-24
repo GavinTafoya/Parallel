@@ -4,24 +4,27 @@ using UnityEngine;
 
 public class Ghost : MonoBehaviour
 {
-    private float speed = 2;
+    [SerializeField] private GameObject targetPlayer;
+    [SerializeField] private bool isA;
+    private float speed = 0.8f;
     private float dir = 1;
+
+    private void Start()
+    {
+        targetPlayer = (isA) ? GameObject.Find("A") : GameObject.Find("B");
+    }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(speed * dir * Time.deltaTime * Vector3.right);
+        transform.position = Vector3.MoveTowards(transform.position, targetPlayer.transform.position, speed * Time.deltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.collider.CompareTag("Player")) // we got em bois
+        if (collision.CompareTag("Player")) // we got em bois
         {
             collision.gameObject.GetComponent<PlayerController>().Hurt();
-        }
-        else
-        {
-            dir *= -1;
         }
     }
 }
