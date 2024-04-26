@@ -27,6 +27,6 @@ public class LevelSelect : MonoBehaviour
 
     public void LoadLevel(int levelNum)
     {
-        SceneManager.LoadScene(levelNum);
+        GameObject.Find("Main Camera").GetComponent<LevelTransitions>().LoadLevel(levelNum);
     }
 }
