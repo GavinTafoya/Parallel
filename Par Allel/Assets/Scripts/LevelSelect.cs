@@ -15,14 +15,14 @@ public class LevelSelect : MonoBehaviour
     {
         if (pageNumber == 1) return;
         pageNumber++;
-        foreach (GameObject page in pages) page.GetComponent<RectTransform>().localPosition -= new Vector3(2000, 0, 0);
+        foreach (GameObject page in pages) page.GetComponent<RectTransform>().localPosition += new Vector3(2000, 0, 0);
     }
 
     public void PageRight()
     {
         if (pageNumber == 3) return;
         pageNumber--;
-        foreach (GameObject page in pages) page.GetComponent<RectTransform>().localPosition += new Vector3(2000, 0, 0);
+        foreach (GameObject page in pages) page.GetComponent<RectTransform>().localPosition -= new Vector3(2000, 0, 0);
     }
 
     public void LoadLevel(int levelNum)

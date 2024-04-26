@@ -1578,11 +1578,11 @@ PrefabInstance:
       objectReference: {fileID: 498131693}
     - target: {fileID: 2340836350850630710, guid: 7bad50811bbe40a4db712e0e0e5823ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 2340836350850630710, guid: 7bad50811bbe40a4db712e0e0e5823ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.542
+      value: 5.75
       objectReference: {fileID: 0}
     - target: {fileID: 2340836350850630710, guid: 7bad50811bbe40a4db712e0e0e5823ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac293ff559acf584db8e247ca874e854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dist: 0.1
+  dist: -0.1
 --- !u!114 &542820934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,7 +2432,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.49803925, g: 0.83921576, b: 0.98823535, a: 0}
+  m_BackGroundColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2581,7 +2581,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.49803925, g: 0.83921576, b: 0.98823535, a: 0}
+  m_BackGroundColor: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -3846,7 +3846,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: f401ddfb026d55740b0d5cd3464ab5ce, type: 3}
     - target: {fileID: 6683022760171827365, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6683022760171827365, guid: e92f383d515892b42ba57a78d3996920, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4695,6 +4695,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1326918585}
     m_Modifications:
+    - target: {fileID: -5239212409449961306, guid: 05d35b004d17abc49bfb088d5b0f9db0, type: 3}
+      propertyPath: distance
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -5239212409449961306, guid: 05d35b004d17abc49bfb088d5b0f9db0, type: 3}
+      propertyPath: midpoint
+      value: -1.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1404733926862386291, guid: 05d35b004d17abc49bfb088d5b0f9db0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.25
