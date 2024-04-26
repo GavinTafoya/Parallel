@@ -17,10 +17,10 @@ public class MovingPlatform : ActionObject
     {
         if (moving)
         {
-            Debug.Log("Parallel - " + delta + " - " + transform.position);
+            //Debug.Log("Parallel - " + delta + " - " + transform.position);
             transform.position = new Vector2(
-                (!isVertical) ? Mathf.Sin(delta / 2) * distance + midpoint : transform.position.x, 
-                (isVertical) ? Mathf.Sin(delta / 2) * distance + midpoint : transform.position.y
+                (!isVertical) ? Mathf.Sin(delta) * distance + midpoint : transform.position.x, 
+                (isVertical) ? Mathf.Sin(delta) * distance + midpoint : transform.position.y
             );
             delta += Time.deltaTime;
         }
