@@ -97,8 +97,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            rb.gravityScale = 1;
-            otherRb.gravityScale = 1;
+            rb.gravityScale = 2;
+            otherRb.gravityScale = 2;
         }
 
         if (isCapped) StartCoroutine(StopJump());
@@ -108,8 +108,8 @@ public class PlayerController : MonoBehaviour
     {
         if (inputManager.isJumping && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 8f);
-            otherRb.velocity = new Vector2(otherRb.velocity.x, 8f);
+            rb.velocity = new Vector2(rb.velocity.x, 10f);
+            otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
         }
         UpdateAnimations();
     }
@@ -130,6 +130,7 @@ public class PlayerController : MonoBehaviour
         if (invincibleTimer > 0) return;
         invincibleTimer = 1;
         health--;
+        if (health <= 0) Destroy(gameObject);
         UpdateHealthBar();
     }
 
