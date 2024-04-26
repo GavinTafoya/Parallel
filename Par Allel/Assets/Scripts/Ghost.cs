@@ -24,7 +24,7 @@ public class Ghost : MonoBehaviour
     {
         if (collision.CompareTag("Player")) // we got em bois
         {
-            collision.gameObject.GetComponent<PlayerController>().Hurt();
+            GameObject.Find("A").GetComponent<PlayerController>().Hurt();
         }
     }
 }

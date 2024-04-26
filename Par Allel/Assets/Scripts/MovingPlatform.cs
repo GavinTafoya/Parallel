@@ -5,7 +5,7 @@ public class MovingPlatform : ActionObject
     [SerializeField] private float distance;
     [SerializeField] private float midpoint;
     [SerializeField] private bool isVertical;
-    private bool moving = false;
+    [SerializeField] private bool moving = false;
     private float delta;
 
     public override void Action()
@@ -17,9 +17,10 @@ public class MovingPlatform : ActionObject
     {
         if (moving)
         {
+            Debug.Log("Parallel - " + delta + " - " + transform.position);
             transform.position = new Vector2(
-                (!isVertical) ? Mathf.Sin(delta * distance / 2) + midpoint : transform.position.x, 
-                (isVertical) ? Mathf.Sin(delta * distance / 2) + midpoint : transform.position.y
+                (!isVertical) ? Mathf.Sin(delta / 2) * distance + midpoint : transform.position.x, 
+                (isVertical) ? Mathf.Sin(delta / 2) * distance + midpoint : transform.position.y
             );
             delta += Time.deltaTime;
         }
