@@ -31,7 +31,7 @@ public class LevelTransitions : MonoBehaviour
         levelCounter++;
         SceneManager.LoadScene(levelCounter);
         StartCoroutine(TP_Players());
-        Debug.LogError("bing");
+        //Debug.LogError("bing");
     }
 
     public void SetLevel(int level)
