@@ -13,7 +13,7 @@ public class LevelSelect : MonoBehaviour
 
     public void PageLeft()
     {
-        if (pageNumber == 1) return;
+        if (pageNumber == 1) LoadLevel(0);
         pageNumber++;
         foreach (GameObject page in pages) page.GetComponent<RectTransform>().localPosition += new Vector3(2000, 0, 0);
     }

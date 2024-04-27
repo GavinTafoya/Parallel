@@ -406,6 +406,7 @@ MonoBehaviour:
   - {x: -59, y: -3.5}
   - {x: -54, y: -4.5}
   - {x: -54, y: 3}
+  - {x: -70, y: -2.2}
   viewportRects:
   - serializedVersion: 2
     x: 0
