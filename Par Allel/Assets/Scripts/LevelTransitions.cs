@@ -27,13 +27,8 @@ public class LevelTransitions : MonoBehaviour
 
     public void NextLevel()
     {
-        Debug.Log("Parallel - " + levelCounter);
-        if (levelCounter == spawnLocations.Length) levelCounter = 0;
-        levelCounter++;
-        Debug.Log("Parallel - " + levelCounter);
-        SceneManager.LoadScene(levelCounter);
-        StartCoroutine(TP_Players());
-        //Debug.LogError("bing");
+        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 2));
+        LoadLevel(1);
     }
 
     public void LoadLevel(int levelNum)
@@ -67,8 +62,8 @@ public class LevelTransitions : MonoBehaviour
     private IEnumerator TP_Players()
     {
         yield return new WaitForSeconds(.1f);
-        a.transform.position = spawnLocations[levelCounter - 1];
-        b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
+        a.transform.position = spawnLocations[levelCounter];
+        b.transform.position = spawnLocations[levelCounter] * new Vector2(-1, 1);
     }
 }
 // 204
