@@ -2019,6 +2019,7 @@ GameObject:
   - component: {fileID: 1465234078}
   - component: {fileID: 1465234077}
   - component: {fileID: 1465234080}
+  - component: {fileID: 1465234081}
   m_Layer: 0
   m_Name: 'Boss Alien '
   m_TagString: Untagged
@@ -2035,7 +2036,7 @@ Transform:
   m_GameObject: {fileID: 1465234075}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -15, z: 0}
+  m_LocalPosition: {x: 0, y: 2, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2070,7 +2071,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.68545055, y: -2.056322}
@@ -2163,6 +2164,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPlayer: {fileID: 0}
   isA: 0
+--- !u!114 &1465234081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465234075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5abf71bd72a084d8182e193d23235c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1523432162
 PrefabInstance:
   m_ObjectHideFlags: 0
