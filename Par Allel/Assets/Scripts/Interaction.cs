@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    [SerializeField] private GameObject target;
+    [SerializeField] private GameObject[] targets;
     private bool hasInteracted = false, interacting = false;
 
     // Update is called once per frame
@@ -10,7 +10,10 @@ public class Interaction : MonoBehaviour
     {
         if (interacting) // do some condition idk
         {
-            target.SendMessage("Action");
+            foreach(GameObject target in targets)
+            {
+                target.SendMessage("Action");
+            }
             hasInteracted = true;
             interacting = false;
         }

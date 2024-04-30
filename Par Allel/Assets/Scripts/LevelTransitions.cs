@@ -27,13 +27,8 @@ public class LevelTransitions : MonoBehaviour
 
     public void NextLevel()
     {
-        Debug.Log("Parallel - " + levelCounter);
-        if (levelCounter == spawnLocations.Length) levelCounter = 0;
-        levelCounter++;
-        Debug.Log("Parallel - " + levelCounter);
-        SceneManager.LoadScene(levelCounter);
-        StartCoroutine(TP_Players());
-        //Debug.LogError("bing");
+        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 2));
+        LoadLevel(1);
     }
 
     public void LoadLevel(int levelNum)

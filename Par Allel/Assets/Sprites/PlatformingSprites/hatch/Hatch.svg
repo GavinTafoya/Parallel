@@ -9,6 +9,9 @@
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    sodipodi:docname="Hatch.svg"
+   inkscape:export-filename="Hatch.png"
+   inkscape:export-xdpi="96.055458"
+   inkscape:export-ydpi="96.055458"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,11 +26,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.2447271"
-     inkscape:cx="-1266.7171"
-     inkscape:cy="768.20263"
+     inkscape:zoom="0.086524096"
+     inkscape:cx="1594.9314"
+     inkscape:cy="861.03182"
      inkscape:window-width="1920"
-     inkscape:window-height="991"
+     inkscape:window-height="1111"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
@@ -39,57 +42,71 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-2.1023166,-200.10232)">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1"
-       width="182.71042"
-       height="22.169884"
-       x="8.0270271"
-       y="214.43629" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g7"
+       transform="translate(0,-213.60651)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1"
+         width="182.71042"
+         height="22.169884"
+         x="-346.58566"
+         y="456.61081"
+         inkscape:export-filename="Hatch_Number 1.png"
+         inkscape:export-xdpi="663.13556"
+         inkscape:export-ydpi="663.13556" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m -163.87523,456.80192 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
+         id="path2"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2"
+         width="186.91061"
+         height="9.3604183"
+         x="-348.49463"
+         y="469.41806"
+         rx="3.6968417"
+         ry="2.8605351" />
+    </g>
   </g>
   <g
      inkscape:label="Number 2"
      inkscape:groupmode="layer"
      id="layer1-8"
      transform="translate(-2.6849954,-126.23695)">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1-6"
-       width="182.71042"
-       height="22.169884"
-       x="36.306774"
-       y="186.15744"
-       inkscape:transform-center-x="91.217953"
-       inkscape:transform-center-y="-5.9094957"
-       transform="rotate(7.9032659)" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2-6"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2-8"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g6"
+       transform="translate(51.897942,-210.5148)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1-6"
+         width="182.71042"
+         height="22.169884"
+         x="-72.433441"
+         y="368.05447"
+         inkscape:transform-center-x="91.217953"
+         inkscape:transform-center-y="-5.9094957"
+         transform="rotate(7.9032659)"
+         inkscape:export-filename="Hatch_Number 2.png"
+         inkscape:export-xdpi="663.11169"
+         inkscape:export-ydpi="663.11169" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m 58.019088,379.84484 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
+         id="path2-6"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2-8"
+         width="186.91061"
+         height="9.3604183"
+         x="-126.6003"
+         y="392.46097"
+         rx="3.6968417"
+         ry="2.8605351" />
+    </g>
   </g>
   <g
      inkscape:label="Number 3"
@@ -98,30 +115,37 @@
      transform="translate(-0.77379853,-11.947378)"
      inkscape:transform-center-x="84.664911"
      inkscape:transform-center-y="4.0135135">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1-2"
-       width="182.71042"
-       height="22.169884"
-       x="84.114563"
-       y="110.92803"
-       inkscape:transform-center-x="84.743387"
-       inkscape:transform-center-y="-34.092885"
-       transform="rotate(25.514056)" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2-1"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2-6"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g8"
+       transform="translate(77.034156,-223.89317)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1-2"
+         width="182.71042"
+         height="22.169884"
+         x="214.19408"
+         y="120.09917"
+         inkscape:transform-center-x="84.743387"
+         inkscape:transform-center-y="-34.092885"
+         transform="rotate(25.514056)"
+         inkscape:export-filename="Hatch_Number 3.png"
+         inkscape:export-xdpi="663.11169"
+         inkscape:export-ydpi="663.11169" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m 304.18125,278.93364 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
+         id="path2-1"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2-6"
+         width="186.91061"
+         height="9.3604183"
+         x="119.56187"
+         y="291.54977"
+         rx="3.6968417"
+         ry="2.8605351" />
+    </g>
   </g>
   <g
      inkscape:label="Number 4"
@@ -130,30 +154,37 @@
      transform="translate(-2.4938753,130.54212)"
      inkscape:transform-center-x="84.664911"
      inkscape:transform-center-y="4.0135135">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1-2-0"
-       width="182.71042"
-       height="22.169884"
-       x="103.77445"
-       y="46.130661"
-       inkscape:transform-center-x="74.564878"
-       inkscape:transform-center-y="-52.762159"
-       transform="rotate(38.882022)" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2-1-3"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2-6-7"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g9"
+       transform="translate(92.041022,-225.71858)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1-2-0"
+         width="182.71042"
+         height="22.169884"
+         x="346.48676"
+         y="-247.67859"
+         inkscape:transform-center-x="74.564878"
+         inkscape:transform-center-y="-52.762159"
+         transform="rotate(38.882022)"
+         inkscape:export-filename="Hatch_Number 4.png"
+         inkscape:export-xdpi="663.11169"
+         inkscape:export-ydpi="663.11169" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m 564.10402,138.26955 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
+         id="path2-1-3"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2-6-7"
+         width="186.91061"
+         height="9.3604183"
+         x="379.48465"
+         y="150.8857"
+         rx="3.6968417"
+         ry="2.8605351" />
+    </g>
   </g>
   <g
      inkscape:label="Number 5"
@@ -162,30 +193,37 @@
      transform="translate(-0.58267859,305.35444)"
      inkscape:transform-center-x="84.664911"
      inkscape:transform-center-y="4.0135135">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1-2-0-0"
-       width="182.71042"
-       height="22.169884"
-       x="107.25229"
-       y="-30.786324"
-       inkscape:transform-center-x="58.109819"
-       inkscape:transform-center-y="-70.477051"
-       transform="rotate(54.09247)" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2-1-3-6"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2-6-7-4"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g10"
+       transform="translate(106.47455,-223.17183)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1-2-0-0"
+         width="182.71042"
+         height="22.169884"
+         x="271.36795"
+         y="-690.05103"
+         inkscape:transform-center-x="58.109819"
+         inkscape:transform-center-y="-70.477051"
+         transform="rotate(54.09247)"
+         inkscape:export-filename="Hatch_Number 5.png"
+         inkscape:export-xdpi="663.11169"
+         inkscape:export-ydpi="663.11169" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m 820.96889,-39.089522 6.78475,-5.06467 h 8.88706 v 27.61679 H 825.938 l -0.38224,-10.12934 -4.51943,-3.55697 z"
+         id="path2-1-3-6"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2-6-7-4"
+         width="186.91061"
+         height="9.3604183"
+         x="636.34949"
+         y="-26.473377"
+         rx="3.6968417"
+         ry="2.8605351" />
+    </g>
   </g>
   <g
      inkscape:label="Number 6"
@@ -194,30 +232,37 @@
      transform="translate(2.9259117,506.01179)"
      inkscape:transform-center-x="84.664911"
      inkscape:transform-center-y="4.0135135">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1-2-0-0-7"
-       width="182.71042"
-       height="22.169884"
-       x="94.999863"
-       y="-92.515709"
-       inkscape:transform-center-x="41.591466"
-       inkscape:transform-center-y="-81.325985"
-       transform="rotate(66.51281)" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2-1-3-6-5"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2-6-7-4-3"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g11"
+       transform="translate(33.689038,-218.94887)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1-2-0-0-7"
+         width="182.71042"
+         height="22.169884"
+         x="62.068684"
+         y="-1167.4143"
+         inkscape:transform-center-x="41.591466"
+         inkscape:transform-center-y="-81.325985"
+         transform="rotate(66.51281)"
+         inkscape:export-filename="Hatch_Number 6.png"
+         inkscape:export-xdpi="663.11169"
+         inkscape:export-ydpi="663.11169" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1163.4554,-243.96983 6.7847,-5.06467 h 8.8871 v 27.61679 h -10.7027 l -0.3823,-10.12934 -4.5194,-3.55697 z"
+         id="path2-1-3-6-5"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2-6-7-4-3"
+         width="186.91061"
+         height="9.3604183"
+         x="978.836"
+         y="-231.35368"
+         rx="3.6968417"
+         ry="2.8605351" />
+    </g>
   </g>
   <g
      inkscape:label="Number 7"
@@ -226,30 +271,37 @@
      transform="translate(3.5459829,722.99383)"
      inkscape:transform-center-x="84.664911"
      inkscape:transform-center-y="4.0135135">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1-2-0-0-7-6"
-       width="182.71042"
-       height="22.169884"
-       x="74.87175"
-       y="-140.8665"
-       inkscape:transform-center-x="26.334294"
-       inkscape:transform-center-y="-87.465831"
-       transform="rotate(76.842724)" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2-1-3-6-5-6"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2-6-7-4-3-0"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g12"
+       transform="translate(0.48710475,-209.6452)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1-2-0-0-7-6"
+         width="182.71042"
+         height="22.169884"
+         x="-301.01178"
+         y="-1541.71"
+         inkscape:transform-center-x="26.334294"
+         inkscape:transform-center-y="-87.465831"
+         transform="rotate(76.842724)"
+         inkscape:export-filename="Hatch_Number 7.png"
+         inkscape:export-xdpi="663.11169"
+         inkscape:export-ydpi="663.11169" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1469.2469,-470.25554 6.7847,-5.06467 h 8.8871 v 27.61679 h -10.7027 l -0.3823,-10.12934 -4.5194,-3.55697 z"
+         id="path2-1-3-6-5-6"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2-6-7-4-3-0"
+         width="186.91061"
+         height="9.3604183"
+         x="1284.6274"
+         y="-457.6394"
+         rx="3.6968417"
+         ry="2.8605351" />
+    </g>
   </g>
   <g
      inkscape:label="Number 8"
@@ -258,29 +310,36 @@
      transform="translate(5.0881846,944.18809)"
      inkscape:transform-center-x="84.664911"
      inkscape:transform-center-y="4.0135135">
-    <rect
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1-2-0-0-7-6-9"
-       width="182.71042"
-       height="22.169884"
-       x="37.739834"
-       y="-195.35246"
-       inkscape:transform-center-x="5.959479"
-       inkscape:transform-center-y="-91.14961"
-       transform="rotate(89.858022)" />
-    <path
-       style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
-       d="m 190.73745,214.62741 6.78475,-5.06467 h 8.88706 v 27.61679 h -10.7027 l -0.38224,-10.12934 -4.51943,-3.55697 z"
-       id="path2-1-3-6-5-6-5"
-       sodipodi:nodetypes="cccccccc" />
-    <rect
-       style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
-       id="rect2-6-7-4-3-0-6"
-       width="186.91061"
-       height="9.3604183"
-       x="6.1180534"
-       y="227.24355"
-       rx="3.6968417"
-       ry="2.8605351" />
+    <g
+       id="g13"
+       transform="translate(0,-201.49608)">
+      <rect
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1-2-0-0-7-6-9"
+         width="182.71065"
+         height="22.169884"
+         x="-872.64142"
+         y="-1748.277"
+         inkscape:transform-center-x="5.9594787"
+         inkscape:transform-center-y="-91.149723"
+         transform="rotate(89.858022)"
+         inkscape:export-filename="Hatch_Number 8.png"
+         inkscape:export-xdpi="663.11169"
+         inkscape:export-ydpi="663.11169" />
+      <path
+         style="fill:#7c7c7c;fill-opacity:1;stroke:#585858;stroke-width:1.57;stroke-dasharray:none;stroke-opacity:1"
+         d="m 1741.4013,-699.59895 6.7848,-5.06468 h 8.887 v 27.61683 h -10.7027 l -0.3822,-10.12935 -4.5195,-3.55698 z"
+         id="path2-1-3-6-5-6-5"
+         sodipodi:nodetypes="cccccccc" />
+      <rect
+         style="fill:#b2b2b2;fill-opacity:1;stroke:#7f7f7f;stroke-width:1.57445;stroke-dasharray:none;stroke-opacity:1"
+         id="rect2-6-7-4-3-0-6"
+         width="186.91061"
+         height="9.3604298"
+         x="1556.782"
+         y="-686.98279"
+         rx="3.6968417"
+         ry="2.8605387" />
+    </g>
   </g>
 </svg>
