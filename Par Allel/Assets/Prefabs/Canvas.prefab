@@ -311,6 +311,21 @@ MonoBehaviour:
   - That was definitely spooky, luckily we were at a safe distance.
   - Some of the ghosts must've caused an eletrical outage, too.
   - (thats what we wanted to happen)
+  audios:
+  - {fileID: 8300000, guid: dfebbacb0945a7e4db0d09ab6b82108f, type: 3}
+  - {fileID: 8300000, guid: d9c62a49908535844aa0a438fb8d9a25, type: 3}
+  - {fileID: 8300000, guid: d814b95c1be9d3542a014a7b06f1d5bc, type: 3}
+  - {fileID: 8300000, guid: 20199866bfe1b9e4eb51adc5e268da16, type: 3}
+  - {fileID: 8300000, guid: 24b675a0aef70fd4e9447260138e265a, type: 3}
+  - {fileID: 8300000, guid: dbc1fd7d9d827c74d97d1aa064ad1ea0, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 7676469cc99fe0d49a6c36d53eef8236, type: 3}
+  - {fileID: 8300000, guid: 1aedea4f75dbffb44aa36c950d06fc1e, type: 3}
+  - {fileID: 8300000, guid: 4678b685decb2bd48822547db37e3fbf, type: 3}
+  - {fileID: 8300000, guid: f7934cc14f1976248b370cac7fd90392, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2082667137533041731
 GameObject:
   m_ObjectHideFlags: 0

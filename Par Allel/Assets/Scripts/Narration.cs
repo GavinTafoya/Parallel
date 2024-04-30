@@ -5,6 +5,7 @@ using UnityEngine;
 public class Narration : MonoBehaviour
 {
     [SerializeField] private string[] narrations;
+    [SerializeField] private AudioClip[] audios;
     private TMP_Text text;
 
     // Start is called before the first frame update
