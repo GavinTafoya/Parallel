@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,280 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Boss Alien Idle _0
+      rect:
+        serializedVersion: 2
+        x: 5382
+        y: 4347
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1834224c237591846a062718ee540bad
+      internalID: 1495670911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _1
+      rect:
+        serializedVersion: 2
+        x: 5484
+        y: 4326
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefd364f1a4e0a64ab7385bd6f6bd23f
+      internalID: -703595061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _2
+      rect:
+        serializedVersion: 2
+        x: 4843
+        y: 1058
+        width: 2425
+        height: 3289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d331a345e477d9b4bad23d8d91177969
+      internalID: -2094089511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _3
+      rect:
+        serializedVersion: 2
+        x: 7277
+        y: 3904
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f740d3484230745aa3f9fd7fcebfe4
+      internalID: -924418616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _4
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 3799
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da91ce44a5131564c871337866c227b1
+      internalID: 884067161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _5
+      rect:
+        serializedVersion: 2
+        x: 7257
+        y: 3802
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f6cbaa9b3c50d45acd05d49e8184bc
+      internalID: -1030140476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2814
+        width: 49
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b316cd5d3af7b48a288b7a4139528d
+      internalID: 1498647480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 249
+        width: 2220
+        height: 3048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac6916d1c2bb0a458463ca60941723f
+      internalID: 1264339107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _8
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 607
+        width: 2320
+        height: 3165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5039d97b3f4a74bbdd5c62f0cf6ca8
+      internalID: 424802113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _9
+      rect:
+        serializedVersion: 2
+        x: 7345
+        y: 636
+        width: 2314
+        height: 3166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4821ed07e4f7641a751a78ab277572
+      internalID: 1881233018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _10
+      rect:
+        serializedVersion: 2
+        x: 9742
+        y: 349
+        width: 2226
+        height: 3042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77a67b27b08b3d4abc3ddd4b416a9ff
+      internalID: 406441953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _11
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 1196
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754af94c8250733418543d82e083031a
+      internalID: -1014177632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Alien Idle _12
+      rect:
+        serializedVersion: 2
+        x: 3727
+        y: 598
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93326f8dc361ba349a54549f2d79c141
+      internalID: -1287132306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +418,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boss Alien Idle _0: 1495670911
+      Boss Alien Idle _1: -703595061
+      Boss Alien Idle _10: 406441953
+      Boss Alien Idle _11: -1014177632
+      Boss Alien Idle _12: -1287132306
+      Boss Alien Idle _2: -2094089511
+      Boss Alien Idle _3: -924418616
+      Boss Alien Idle _4: 884067161
+      Boss Alien Idle _5: -1030140476
+      Boss Alien Idle _6: 1498647480
+      Boss Alien Idle _7: 1264339107
+      Boss Alien Idle _8: 424802113
+      Boss Alien Idle _9: 1881233018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

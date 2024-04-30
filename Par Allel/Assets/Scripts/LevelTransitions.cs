@@ -27,8 +27,9 @@ public class LevelTransitions : MonoBehaviour
 
     public void NextLevel()
     {
-        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 3));
-        LoadLevel(2);
+        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 2));
+        SceneManager.LoadScene("LevelSelect");
+        a.transform.position = new Vector3(-1.4f, -12.2f, 2);
     }
 
     public void LoadLevel(int levelNum)
@@ -62,8 +63,13 @@ public class LevelTransitions : MonoBehaviour
     private IEnumerator TP_Players()
     {
         yield return new WaitForSeconds(.1f);
-        a.transform.position = spawnLocations[levelCounter];
-        b.transform.position = spawnLocations[levelCounter] * new Vector2(-1, 1);
+        a.transform.position = spawnLocations[levelCounter - 1];
+        b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
+        GameObject.Find("Narration").GetComponent<Narration>().DisplayNarration(levelCounter - 1);
+        StartCoroutine(a.GetComponent<PlayerController>().StopJump());
+        /*Debug.Log("Parallel - " + a.transform.position + " " + b.transform.position);
+        yield return new WaitForSeconds(.1f);
+        Debug.Log("Parallel - " + a.transform.position + " " + b.transform.position);*/
     }
 }
 // 204

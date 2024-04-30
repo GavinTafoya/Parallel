@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Hazard : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.collider.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             GameObject.Find("A").GetComponent<PlayerController>().Hurt();
         }

@@ -56,10 +56,10 @@ public class PlayerController : MonoBehaviour
             || Physics2D.OverlapBox((Vector2) groundChecks[1].position - new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer);
         isCapped = Physics2D.OverlapBox((Vector2) roofChecks[0].position + new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer)
             || Physics2D.OverlapBox((Vector2) roofChecks[1].position + new Vector2(0, 0.665f), new Vector2(.3f, .015f), 0, groundLayer);
-        isLeftWalled = Physics2D.OverlapBox((Vector2)wallChecks[0].position - new Vector2(0.2f, 0), new Vector2(.03f, 1f), 0, wallLayer)
-            || Physics2D.OverlapBox((Vector2)wallChecks[1].position + new Vector2(0.2f, 0), new Vector2(.03f, 1f), 0, wallLayer);
-        isRightWalled = Physics2D.OverlapBox((Vector2)wallChecks[2].position + new Vector2(0.2f, 0), new Vector2(.03f, .3f), 0, wallLayer)
-            || Physics2D.OverlapBox((Vector2)wallChecks[3].position - new Vector2(0.2f, 0), new Vector2(.03f, .3f), 0, wallLayer);
+        isLeftWalled = Physics2D.OverlapBox((Vector2)wallChecks[0].position - new Vector2(0.215f, 0), new Vector2(.03f, 1.3f), 0, wallLayer)
+            || Physics2D.OverlapBox((Vector2)wallChecks[1].position + new Vector2(0.215f, 0), new Vector2(.03f, 1.3f), 0, wallLayer);
+        isRightWalled = Physics2D.OverlapBox((Vector2)wallChecks[2].position + new Vector2(0.215f, 0), new Vector2(.03f, 1.3f), 0, wallLayer)
+            || Physics2D.OverlapBox((Vector2)wallChecks[3].position - new Vector2(0.215f, 0), new Vector2(.03f, 1.3f), 0, wallLayer);
 
         if ((isRightWalled && xDir > 0) || (isLeftWalled && xDir < 0)) xDir = 0;
 
@@ -108,13 +108,13 @@ public class PlayerController : MonoBehaviour
     {
         if (inputManager.isJumping && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
-            otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
+            rb.velocity = new Vector2(rb.velocity.x, 11f);
+            otherRb.velocity = new Vector2(otherRb.velocity.x, 11f);
         }
         UpdateAnimations();
     }
 
-    private IEnumerator StopJump()
+    public IEnumerator StopJump()
     {
         if (rb.velocity.y > 0 || otherRb.velocity.y > 0)
         {
