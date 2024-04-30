@@ -29,6 +29,7 @@ public class LevelTransitions : MonoBehaviour
     {
         PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 2));
         SceneManager.LoadScene("LevelSelect");
+        a.transform.position = new Vector3(-1.4f, -12.2f, 2);
     }
 
     public void LoadLevel(int levelNum)
@@ -66,9 +67,9 @@ public class LevelTransitions : MonoBehaviour
         b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
         GameObject.Find("Narration").GetComponent<Narration>().DisplayNarration(levelCounter - 1);
         StartCoroutine(a.GetComponent<PlayerController>().StopJump());
-        Debug.Log("Parallel - " + a.transform.position + " " + b.transform.position);
+        /*Debug.Log("Parallel - " + a.transform.position + " " + b.transform.position);
         yield return new WaitForSeconds(.1f);
-        Debug.Log("Parallel - " + a.transform.position + " " + b.transform.position);
+        Debug.Log("Parallel - " + a.transform.position + " " + b.transform.position);*/
     }
 }
 // 204
