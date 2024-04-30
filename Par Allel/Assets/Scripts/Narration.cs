@@ -1,11 +1,19 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
 
+[Serializable]
+public struct PseudoArray<T>
+{
+    public T[] array;
+}
+
 public class Narration : MonoBehaviour
 {
-    [SerializeField] private string[] narrations;
-    [SerializeField] private AudioClip[] audios;
+    [SerializeField] private PseudoArray<string>[] narrations;
+    [SerializeField] private PseudoArray<AudioClip>[] audios;
+    [SerializeField] private AudioSource source;
     private TMP_Text text;
 
     // Start is called before the first frame update
@@ -17,9 +25,12 @@ public class Narration : MonoBehaviour
 
     public void DisplayNarration(int num)
     {
-        text.text = narrations[num];
-        audios[num].LoadAudioData();
-        
+        foreach(AudioClip a in audios[num].levelAudio)
+        {
+            text.text = narrations[num];
+            source.clip = a;
+            source.Play();
+        }
         StartCoroutine(FadeIn());
     }
 
