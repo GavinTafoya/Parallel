@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 717425759035148891}
   - component: {fileID: 7323951260506545694}
   - component: {fileID: 4424919732636991337}
+  - component: {fileID: 2791263749418340557}
   m_Layer: 0
   m_Name: Electricity
   m_TagString: Untagged
@@ -136,7 +137,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -152,3 +153,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65, y: 0.62}
   m_EdgeRadius: 0
+--- !u!114 &2791263749418340557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5003885683206889761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f974baa15cf154b8469eedf85d4623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

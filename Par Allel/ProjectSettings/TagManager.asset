@@ -8,6 +8,8 @@ TagManager:
   - MoveRight
   - Jump
   - Health
+  - shoot
+  - evilshoot
   layers:
   - Default
   - TransparentFX

@@ -820,6 +820,18 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2083401965}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 2083401965}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.data[1]
+      value: 
+      objectReference: {fileID: 2083401965}
     - target: {fileID: 7829651865534398296, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
       propertyPath: m_Name
       value: Lever
@@ -2389,12 +2401,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300000, guid: bb742673195e0fd4facb1a3279dad932, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c71c2e473c40df4491bf6933ded9622, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 12.04, y: 10.26}
+  m_Size: {x: 12.04, y: 10.27}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2500,8 +2512,8 @@ Transform:
   m_GameObject: {fileID: 883047042}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0, z: 1}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: 7.5, y: 0, z: 1}
+  m_LocalScale: {x: 14, y: 14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2681,8 +2693,8 @@ Transform:
   m_GameObject: {fileID: 1001042040}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 1}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalPosition: {x: -7.5, y: 0, z: 1}
+  m_LocalScale: {x: 14, y: 14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3785,6 +3797,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
       propertyPath: target
+      value: 
+      objectReference: {fileID: 889846549}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.data[0]
       value: 
       objectReference: {fileID: 889846549}
     - target: {fileID: 7829651865534398296, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}

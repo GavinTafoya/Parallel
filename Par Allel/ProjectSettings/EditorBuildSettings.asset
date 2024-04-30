@@ -30,13 +30,25 @@ EditorBuildSettings:
     path: Assets/Scenes/MainEntrance.unity
     guid: cf6ac677e8cbbad47b0e63cd59bee939
   - enabled: 1
-    path: Assets/Scenes/Maintenance.unity
-    guid: 50b310f34865da34394f6e4c1ea2f270
-  - enabled: 1
     path: Assets/Scenes/Command.unity
     guid: 25f33050e911c3f45afdcf63c446cbca
   - enabled: 1
+    path: Assets/Scenes/Boss.unity
+    guid: 3d9a4c7c7961b4440ad710031e24769d
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 87c88d831a3f10b4897ab3118b4b7bea
+  - enabled: 1
     path: Assets/Scenes/LevelSelect.unity
     guid: 796e61e9f95609f41871a5c64c15d354
+  - enabled: 0
+    path: Assets/Scenes/Maintenance.unity
+    guid: 50b310f34865da34394f6e4c1ea2f270
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: e7aa711a4dc33d34bbfebf317bb9ccbf
+  - enabled: 1
+    path: Assets/Scenes/EndAnimation.unity
+    guid: 91c0516c9b0cc5344bf67a9cbfbf5e5b
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: dc31bf5bb30ddc743b714fc78ec3b185, type: 2}

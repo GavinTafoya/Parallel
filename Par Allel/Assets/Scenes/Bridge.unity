@@ -2737,6 +2737,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1979099287}
+    - target: {fileID: 1955597505428581751, guid: 7bad50811bbe40a4db712e0e0e5823ce, type: 3}
+      propertyPath: targets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955597505428581751, guid: 7bad50811bbe40a4db712e0e0e5823ce, type: 3}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 1979099287}
     - target: {fileID: 2340836350850630710, guid: 7bad50811bbe40a4db712e0e0e5823ce, type: 3}
       propertyPath: m_LocalScale.y
       value: 1
@@ -3446,6 +3454,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1687034691}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 1687034691}
     - target: {fileID: 7829651865534398296, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
       propertyPath: m_Name
       value: Lever
@@ -3926,6 +3942,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
       propertyPath: target
+      value: 
+      objectReference: {fileID: 2026635840}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6783749638860940862, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}
+      propertyPath: targets.Array.data[0]
       value: 
       objectReference: {fileID: 2026635840}
     - target: {fileID: 7829651865534398296, guid: e1cf214051a41bd46a81f15e5c8baf28, type: 3}

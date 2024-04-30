@@ -108,13 +108,13 @@ public class PlayerController : MonoBehaviour
     {
         if (inputManager.isJumping && isGrounded)
         {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
-            otherRb.velocity = new Vector2(otherRb.velocity.x, 10f);
+            rb.velocity = new Vector2(rb.velocity.x, 11f);
+            otherRb.velocity = new Vector2(otherRb.velocity.x, 11f);
         }
         UpdateAnimations();
     }
 
-    private IEnumerator StopJump()
+    public IEnumerator StopJump()
     {
         if (rb.velocity.y > 0 || otherRb.velocity.y > 0)
         {

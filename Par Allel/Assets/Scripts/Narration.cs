@@ -18,11 +18,14 @@ public class Narration : MonoBehaviour
     public void DisplayNarration(int num)
     {
         text.text = narrations[num];
+        audios[num].LoadAudioData();
+        
         StartCoroutine(FadeIn());
     }
 
     private IEnumerator FadeIn()
     {
+
         while (text.color.a < 1)
         {
             text.color = new Color(1, 1, 1, text.color.a + 0.06f);
