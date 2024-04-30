@@ -1,5 +1,7 @@
 using UnityEngine;
 
+// if the boss shot is shot at A/B, and A goes to cannon B/B goes to cannon A, then the ball goes in
+// then if A goes to the A cannon or B goes to the B cannon, it fires
 public class Boss : MonoBehaviour
 {
     private int health = 5;
