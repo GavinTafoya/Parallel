@@ -15,7 +15,7 @@ public class LevelSelect : MonoBehaviour
         foreach(GameObject level in levels)
         {
             i++;
-            if (PlayerPrefs.GetFloat("HighLevel", 2) < i + 1)
+            if (PlayerPrefs.GetFloat("highLevel", 2) < i + 1)
             {
                 level.GetComponent<Button>().enabled = false;
                 level.GetComponent<Image>().color = new Color(level.GetComponent<Image>().color.r * .5f, level.GetComponent<Image>().color.g * .5f, level.GetComponent<Image>().color.b * .5f);

@@ -27,7 +27,7 @@ public class LevelTransitions : MonoBehaviour
 
     public void NextLevel()
     {
-        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 2));
+        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 2) + 1);
         SceneManager.LoadScene("LevelSelect");
         a.transform.position = new Vector3(-1.4f, -12.2f, 2);
     }
