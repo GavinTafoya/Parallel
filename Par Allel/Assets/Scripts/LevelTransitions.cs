@@ -27,8 +27,8 @@ public class LevelTransitions : MonoBehaviour
 
     public void NextLevel()
     {
-        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 2));
-        LoadLevel(1);
+        PlayerPrefs.SetFloat("highLevel", PlayerPrefs.GetFloat("highLevel", 3));
+        LoadLevel(2);
     }
 
     public void LoadLevel(int levelNum)

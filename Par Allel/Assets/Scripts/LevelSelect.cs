@@ -1,14 +1,26 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
 {
-    [SerializeField] private GameObject[] pages;
+    [SerializeField] private GameObject[] pages, levels;
     private int pageNumber;
 
     private void Start()
     {
         pageNumber = 1;
+        int i = 0;
+        foreach(GameObject level in levels)
+        {
+            i++;
+            if (PlayerPrefs.GetFloat("HighLevel", 2) < i + 1)
+            {
+                level.GetComponent<Button>().enabled = false;
+                level.GetComponent<Image>().color = new Color(level.GetComponent<Image>().color.r * .5f, level.GetComponent<Image>().color.g * .5f, level.GetComponent<Image>().color.b * .5f);
+            }
+        }
     }
 
     public void PageLeft()
