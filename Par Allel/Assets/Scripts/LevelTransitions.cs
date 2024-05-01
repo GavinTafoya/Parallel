@@ -51,7 +51,7 @@ public class LevelTransitions : MonoBehaviour
         virtualCam2.GetComponent<CinemachineVirtualCamera>().Follow = GameObject.Find("Cam2").transform;
         virtualCam1.GetComponent<CinemachineVirtualCamera>().m_Lens.OrthographicSize = cameraSizes[levelCounter - 1];
         virtualCam2.GetComponent<CinemachineVirtualCamera>().m_Lens.OrthographicSize = cameraSizes[levelCounter - 1];
-        GetComponent<Camera>().rect = viewportRects[(levelCounter - 1) * 2];
+        GetComponent<Camera>().rect = viewportRects[(levelCounter - 2) * 2];
         camera2.GetComponent<Camera>().rect = viewportRects[(levelCounter - 1) * 2 + 1];
     }
 
