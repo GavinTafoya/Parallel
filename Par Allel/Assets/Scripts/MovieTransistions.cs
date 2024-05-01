@@ -19,7 +19,15 @@ public class MovieTransistions : MonoBehaviour
     private IEnumerator EndAnimation()
     {
         yield return new WaitForSeconds(timeLength + 0.1f);
-        SceneManager.LoadScene("LevelSelect");
         GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
+    }
+
+    private void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+
+            GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
+        }
     }
 }

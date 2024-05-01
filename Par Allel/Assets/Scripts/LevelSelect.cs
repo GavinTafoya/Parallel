@@ -10,7 +10,6 @@ public class LevelSelect : MonoBehaviour
 
     private void Start()
     {
-
         pageNumber = 1;
         int i = 0;
         foreach(GameObject level in levels)
@@ -19,7 +18,7 @@ public class LevelSelect : MonoBehaviour
             if (PlayerPrefs.GetFloat("highLevel", 2) < i + 1)
             {
                 level.GetComponent<Button>().enabled = false;
-                level.GetComponent<Image>().color = new Color(level.GetComponent<Image>().color.r * .5f, level.GetComponent<Image>().color.g * .5f, level.GetComponent<Image>().color.b * .5f);
+                level.GetComponent<Image>().color = new Color(level.GetComponent<Image>().color.r * .25f, level.GetComponent<Image>().color.g * .25f, level.GetComponent<Image>().color.b * .25f);
             }
         }
     }
