@@ -10,6 +10,7 @@ public class LevelSelect : MonoBehaviour
 
     private void Start()
     {
+
         pageNumber = 1;
         int i = 0;
         foreach(GameObject level in levels)

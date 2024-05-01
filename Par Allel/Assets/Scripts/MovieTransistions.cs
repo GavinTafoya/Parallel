@@ -13,11 +13,13 @@ public class MovieTransistions : MonoBehaviour
     {
         video = GetComponent<VideoPlayer>();
         timeLength = video.frameCount / video.frameRate;
+        StartCoroutine("EndAnimation");
     }
 
     private IEnumerator EndAnimation()
     {
         yield return new WaitForSeconds(timeLength + 0.1f);
         SceneManager.LoadScene("LevelSelect");
+        GameObject.Find("Main Camera").GetComponent<LevelTransitions>().NextLevel();
     }
 }
