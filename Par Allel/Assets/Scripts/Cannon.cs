@@ -27,7 +27,7 @@ public class Cannon : MonoBehaviour
         {
             bool activatedByA = collision.gameObject.layer == 8;
 
-            else if (activatedByA && isA && loaded)
+            if (activatedByA && isA && loaded)
             {
                 Fire();
             }

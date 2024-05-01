@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // if the boss shot is shot at A/B, and A goes to cannon B/B goes to cannon A, then the ball goes in
 // then if A goes to the A cannon or B goes to the B cannon, it fires
@@ -17,6 +19,7 @@ public class Boss : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        StartCoroutine("End");
     }
 
     private void FixedUpdate()
@@ -41,5 +44,11 @@ public class Boss : MonoBehaviour
             health--;
             hurt = true;
         }
+    }
+
+    private IEnumerator End()
+    {
+        yield return new WaitForSeconds(45);
+        SceneManager.LoadScene(10);
     }
 }
