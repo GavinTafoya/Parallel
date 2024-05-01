@@ -8,7 +8,7 @@ public class Narration : MonoBehaviour
 {
     private string[] narrationIDs = 
     { 
-        "1", "2", "3", "atrium2", "4", "5", "6", "7", "8", "9", "boss2", "boss3", "10"
+        "1", "2", "3", "atrium2", "4", "5", "6", "7", "8", "command2", "9", "boss2", "boss3", "10"
     };
     private string[] narrations = 
     {
@@ -23,7 +23,8 @@ public class Narration : MonoBehaviour
         "We finally made it to the Command Center.",
         "Some of the ghosts must've caused an electrical outage, too.",
         "That ghost was huge!",
-        "He must have been the one in charge, we had to take him down!",
+        "He must have been the one in charge,",
+        " we had to take him down!",
         "Finally! We were able to find the escape pods.",
     };
     [SerializeField] private AudioClip[] audios;

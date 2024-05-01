@@ -295,6 +295,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2c040025b1a004981103420548b479, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audios:
+  - {fileID: 8300000, guid: 176f9862e815ba3489b7060141843a63, type: 3}
+  - {fileID: 8300000, guid: d9c62a49908535844aa0a438fb8d9a25, type: 3}
+  - {fileID: 8300000, guid: d814b95c1be9d3542a014a7b06f1d5bc, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 20199866bfe1b9e4eb51adc5e268da16, type: 3}
+  - {fileID: 8300000, guid: 24b675a0aef70fd4e9447260138e265a, type: 3}
+  - {fileID: 8300000, guid: dbc1fd7d9d827c74d97d1aa064ad1ea0, type: 3}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 7676469cc99fe0d49a6c36d53eef8236, type: 3}
+  - {fileID: 8300000, guid: 3334e0594e178414fa1bba38a65a565d, type: 3}
+  - {fileID: 8300000, guid: e8bc7e23d570c984892337d050abc251, type: 3}
+  - {fileID: 8300000, guid: a1d3ee250a86b984db75ba1d263ef021, type: 3}
+  - {fileID: 8300000, guid: 21f7b6ebd079b9e468e04fb04a570e91, type: 3}
+  - {fileID: 8300000, guid: dfebbacb0945a7e4db0d09ab6b82108f, type: 3}
   source: {fileID: 4597245413495191403}
 --- !u!82 &4597245413495191403
 AudioSource:
