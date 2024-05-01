@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum AnimatorState
@@ -142,6 +143,11 @@ public class PlayerController : MonoBehaviour
         hearts[0].sprite = (health == 3) ? fullHeart : brokenHeart;
         hearts[1].sprite = (health >= 2) ? fullHeart : brokenHeart;
         hearts[2].sprite = (health >= 1) ? fullHeart : brokenHeart;
+
+        if (health == 0)
+        {
+            SceneManager.LoadScene("LevelSelect");
+        }
     }
 
     private void UpdateAnimations()

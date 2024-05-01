@@ -65,7 +65,7 @@ public class LevelTransitions : MonoBehaviour
         yield return new WaitForSeconds(.1f);
         a.transform.position = spawnLocations[levelCounter - 1];
         b.transform.position = spawnLocations[levelCounter - 1] * new Vector2(-1, 1);
-        GameObject.Find("Narration").GetComponent<Narration>().DisplayNarration(levelCounter - 1);
+        GameObject.Find("Narration").GetComponent<Narration>().DisplayNarration("" + (levelCounter - 1));
         StartCoroutine(a.GetComponent<PlayerController>().StopJump());
         /*Debug.Log("Parallel - " + a.transform.position + " " + b.transform.position);
         yield return new WaitForSeconds(.1f);

@@ -13,7 +13,7 @@ public class MovieTransistions : MonoBehaviour
     {
         video = GetComponent<VideoPlayer>();
         timeLength = video.frameCount / video.frameRate;
-        StartCoroutine("EndAnimation");
+        StartCoroutine(EndAnimation());
     }
 
     private IEnumerator EndAnimation()
