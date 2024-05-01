@@ -25,9 +25,9 @@ public class Narration : MonoBehaviour
 
     public void DisplayNarration(int num)
     {
-        foreach(AudioClip a in audios[num].levelAudio)
+        foreach(AudioClip a in audios[num].array)
         {
-            text.text = narrations[num];
+            text.text = narrations[num].array[0];
             source.clip = a;
             source.Play();
         }
