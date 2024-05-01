@@ -5,7 +5,8 @@ using UnityEngine;
 public class Exit : MonoBehaviour
 {
     bool ending = false;
-
+    
+    //Check if the player is colliding
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag.Equals("Player") && !ending)
@@ -15,6 +16,7 @@ public class Exit : MonoBehaviour
         }
     }
 
+    //Open the door
     private IEnumerator Open()
     {
         GetComponent<Animator>().SetBool("triggered", true);
